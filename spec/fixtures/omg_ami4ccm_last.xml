@@ -1,0 +1,17 @@
+<bibitem id="AMI4CCM1.1">
+  <fetched>2020-02-10</fetched>
+  <title type="main" format="text/plain" language="en" script="Latn">Asynchronous Method Invocation for CCM</title>
+  <uri type="src">https://www.omg.org/spec/AMI4CCM/1.1/</uri>
+  <uri type="pdf">https://www.omg.org/spec/AMI4CCM/1.1/PDF</uri>
+  <date type="published">
+    <on>2015-08</on>
+  </date>
+  <version>
+    <revision-date>2015-08-01</revision-date>
+    <draft>1.1</draft>
+  </version>
+  <abstract format="text/plain" language="en" script="Latn">This specification defines a mechanism to perform asynchronous method invocation for CCM.</abstract>
+  <status>
+    <stage>formal</stage>
+  </status>
+</bibitem>
