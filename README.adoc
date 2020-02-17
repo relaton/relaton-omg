@@ -87,7 +87,7 @@ item = RelatonOmg::OmgBibliographicItem.from_xml 'spec/fixtures/omg_ami4ccm_1_0.
 === Create bibliographic item form Hash
 [source,ruby]
 ----
-hash = RelatonOmg::OmgBibliographicItem.from_xml 'spec/fixtures/omg_ami4ccm_1_0.xml'
+hash = YAML.load_file 'spec/fixtures/omg_ami4ccm_1_0.xml'
 => {"id"=>"AMI4CCM1.0",
 ...
 
