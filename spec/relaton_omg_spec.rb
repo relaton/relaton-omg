@@ -11,7 +11,7 @@ RSpec.describe RelatonOmg do
     expect(hash.size).to eq 32
   end
 
-  context "get OMG document" do
+  context "fetch OMG documents" do
     it "get specific version" do
       VCR.use_cassette "omg_ami4ccm_1_0" do
         item = RelatonOmg::OmgBibliography.get "OMG AMI4CCM 1.0"
@@ -42,6 +42,38 @@ RSpec.describe RelatonOmg do
         errors = schema.validate file
         expect(errors).to eq []
       end
+    end
+
+    it "deals with non-existent document" do
+      VCR.use_cassette "non_existed_doc" do
+        expect do
+          RelatonOmg::OmgBibliography.get "OMG NOTEXIST 1.1"
+        end.to output(/no document found/).to_stderr
+      end
+    end
+
+    it "deals with unavailable service" do
+      io = double('io')
+      expect(io).to receive(:status).and_return(["503", "Service Unavailable"]).at_least(:once)
+      expect(OpenURI).to receive(:open_uri).and_raise OpenURI::HTTPError.new("Service Unavailable", io)
+      expect do
+        RelatonOmg::OmgBibliography.get "OMG AMI4CCM"
+      end.to raise_error RelatonBib::RequestError
+    end
+
+    it "convert form XML to Hash" do
+      item = RelatonOmg::OmgBibliographicItem.from_xml "spec/fixtures/omg_ami4ccm_1_0.xml"
+      hash = item.to_hash
+      file = "spec/fixtures/omg_ami4ccm_1_0.yaml"
+      File.write file, hash.to_yaml, encoding: "UTF-8" unless File.exist? file
+      expect(hash).to eq YAML.load_file(file)
+    end
+
+    it "create from YAML" do
+      item = RelatonOmg::OmgBibliographicItem.from_yaml "spec/fixtures/omg_ami4ccm_1_0.yaml"
+      expect(item.to_xml).to be_equivalent_to File.read(
+        "spec/fixtures/omg_ami4ccm_1_0.xml", encoding: "UTF-8"
+      )
     end
   end
 end

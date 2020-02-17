@@ -1,0 +1,367 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.omg.org/spec/NOTEXIST/1.1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: '404'
+    headers:
+      Date:
+      - Sun, 16 Feb 2020 05:38:20 GMT
+      Server:
+      - Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/5.4.16 mod_perl/2.0.10 Perl/v5.16.3
+      X-Arequestid:
+      - 38x2336595x1
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Security-Policy:
+      - frame-ancestors 'self'
+      X-Asen:
+      - SEN-L14934863
+      Set-Cookie:
+      - JSESSIONID=4FB6906913B0BD27DF5A50512AA5D205; Path=/; Secure; HttpOnly
+      - atlassian.xsrf.token=BZ1S-78OQ-47MN-5Q1I_3c0a913760ceb474447c05aa93cf591836cf3354_lout;
+        Path=/; Secure
+      X-Ausername:
+      - anonymous
+      Cache-Control:
+      - no-store
+      Content-Type:
+      - text/html;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: "\n\n\n\n\n\n\n\n\n\n\n<html class=\"js no-touch csstransforms3d csstransitions\"
+        lang=\"en\">\n<head>\n    <title>404 | Object Management Group</title>\n    <meta
+        charset=\"utf-8\"/>\n    <!-- HEAD INCLUDE BEGIN -->\r\n<meta http-equiv=\"X-UA-Compatible\"
+        content=\"IE=edge\">\r\n\r\n<!-- Mobile Specific Metas\r\n==================================================
+        -->\r\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0\">\r\n\r\n<!--
+        Google Web Fonts\r\n================================================== -->\r\n<link
+        href=\"//fonts.googleapis.com/css?family=Anton|Muli:300,400,400italic,300italic|Oswald\"
+        rel=\"stylesheet\" type=\"text/css\">\r\n\r\n<!-- Global Site Tag (gtag.js)
+        - Google Analytics -->\r\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-106941488-1\"></script>\r\n<script>\r\n
+        \   window.dataLayer = window.dataLayer || [];\r\n    function gtag(){dataLayer.push(arguments)};\r\n
+        \   gtag('js', new Date());\r\n    gtag('config', 'UA-106941488-1');\r\n</script>\r\n<!--
+        Google Analytics -->\r\n\r\n<!-- CSS\r\n==================================================
+        -->\r\n<!-- Base + Vendors CSS -->\r\n<link rel=\"stylesheet\" href=\"//www.omg.org/css/bootstrap.min.css\">\r\n<link
+        rel=\"stylesheet\" href=\"//www.omg.org/css/fonts/font-awesome/css/font-awesome.css\">\r\n<link
+        rel=\"stylesheet\" href=\"//www.omg.org/vendor/owl-carousel/owl.carousel.css\"
+        media=\"screen\">\r\n<link rel=\"stylesheet\" href=\"//www.omg.org/vendor/owl-carousel/owl.theme.css\"
+        media=\"screen\">\r\n<link rel=\"stylesheet\" href=\"//www.omg.org/vendor/magnific-popup/magnific-popup.css\"
+        media=\"screen\">\r\n<link rel=\"stylesheet\" href=\"//www.omg.org/vendor/mediaelement/mediaelementplayer.css\"
+        />\r\n\r\n<!-- Theme CSS-->\r\n<link rel=\"stylesheet\" href=\"//www.omg.org/css/theme.css\">\r\n<link
+        rel=\"stylesheet\" href=\"//www.omg.org/css/theme-elements.css\">\r\n<link
+        rel=\"stylesheet\" href=\"//www.omg.org/css/animate.min.css\">\r\n\r\n<!--
+        Skin CSS -->\r\n<link rel=\"stylesheet\" href=\"//www.omg.org/css/skins/teal.css\">\r\n\r\n<!--
+        Custom CSS-->\r\n<link rel=\"stylesheet\" href=\"//www.omg.org/css/custom.css\">\r\n\r\n<!--
+        Head Libs -->\r\n<script src=\"//www.omg.org/vendor/modernizr.js\"></script>\r\n\r\n<!--[if
+        lt IE 9]>\r\n    <script src=\"http://html5shim.googlecode.com/svn/trunk/html5.js\"></script>\r\n
+        \   <script src=\"vendor/respond.min.js\"></script>\r\n<![endif]-->\r\n\r\n<!--[if
+        IE]>\r\n    <link rel=\"stylesheet\" href=\"css/ie.css\">\r\n<![endif]-->\r\n\r\n<!--
+        Favicons\r\n================================================== -->\r\n<link
+        rel=\"shortcut icon\" href=\"//www.omg.org/images/favicon.ico\">\r\n<link
+        rel=\"icon\" href=\"//www.omg.org/images/apple-touch-icon.png\">\r\n<link
+        rel=\"icon\" sizes=\"72x72\" href=\"//www.omg.org/images/apple-touch-icon-72x72.png\">\r\n<link
+        rel=\"icon\" sizes=\"114x114\" href=\"//www.omg.org/images/apple-touch-icon-114x114.png\">\r\n<link
+        rel=\"icon\" sizes=\"144x144\" href=\"//www.omg.org/images/apple-touch-icon-144x144.png\">\r\n\r\n<!--
+        sortable tables -->\r\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/sortable/0.8.0/js/sortable.min.js\"
+        integrity=\"sha256-gCtdA1cLK2EhQZCMhhvGzUsWM/fsxtJ2IImUJ+4UOP8=\" crossorigin=\"anonymous\"></script>\r\n<link
+        rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/sortable/0.8.0/css/sortable-theme-minimal.min.css\"
+        integrity=\"sha256-lUpa5ZzK+fEJnc4LteGehF/IEYQeaOMvkHxn7ycn1+4=\" crossorigin=\"anonymous\"
+        /><!-- sortable tables -->\r\n\r\n<!-- InstanceBeginEditable name=\"head\"
+        -->\r\n<!-- InstanceEndEditable -->\r\n<style id=\"fit-vids-style\">\r\n    .fluid-width-video-wrapper{width:100%;position:relative;padding:0;}\r\n
+        \   .fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper
+        embed {position:absolute;top:0;left:0;width:100%;height:100%;}\r\n</style>\r\n<link
+        rel=\"stylesheet\" type=\"text/css\" href=\"//s.swiftypecdn.com/assets/new_embed-59af57b2801d7d8cca80ebe043cdcf80.css\">\r\n<style
+        type=\"text/css\">\r\n    .st-install-UJwkmPzgjHBCxHyxzCaj .st-ui-result\r\n
+        \   .st-ui-type-heading { color:#0089d7 !important }\r\n    .st-install-UJwkmPzgjHBCxHyxzCaj
+        .st-ui-result em {font-style:normal; font-weight:bold; background-color:#f6fcfe
+        !important}\r\n    ul.dd-list {\r\n        margin-bottom: 0;\r\n    }\r\n
+        \   div.issues-links {\r\n        text-align: center;\r\n    }\r\n.spec-acronym
+        {\r\n    border: 5px solid #d4d4d4;\r\n    text-align: center;\r\n    margin:
+        -5px 15px 0 -135px;\r\n}\r\n</style>\r\n<!-- HEAD INCLUDE END --></head>\n<body>\n<!--
+        BODY HEADER INCLUDE BEGIN -->\r\n<header class=\"header header-default\">\r\n
+        \   <div class=\"header-top\">\r\n        <div class=\"container\">\r\n            <div
+        class=\"header-top-left\">\r\n                <ul class=\"header-top-nav\">\r\n
+        \                   <li><a href=\"//www.omg.org/index.htm\"><span style=\"color:white\">Home</span></a></li>\r\n
+        \                   <li><a href=\"//www.omg.org/site-map.htm\"><span style=\"color:white\">Site
+        Map</span></a></li>\r\n                    <li><a href=\"//www.omg.org/legal/index.htm\"><span
+        style=\"color:white\">Legal</span></a></li>\r\n                </ul>\r\n                <ul
+        class=\"header-top-nav\">\r\n                    <li>\r\n                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+        href=\"https://www.facebook.com/Object-Management-Group-171534410022/\"><i
+        class=\"fa fa-facebook\"></i></a>&nbsp;&nbsp;&nbsp;<a href=\"https://twitter.com/objectmgmtgroup\"><i
+        class=\"fa fa-twitter\"></i></a>&nbsp;&nbsp;&nbsp;<a href=\"https://www.linkedin.com/groups/66799\"><i
+        class=\"fa fa-linkedin\"></i></a>&nbsp;&nbsp;&nbsp;<a href=\"http://blog.omg.org/\"><i
+        class=\"fa fa-pencil-square-o\"></i></a>&nbsp;&nbsp;&nbsp;<a href=\"https://www.youtube.com/channel/UCtuTj1wtywojYNZoyPeYAFw\"><i
+        class=\"fa fa-youtube\"></i></a>\r\n                    </li>\r\n                </ul>\r\n
+        \           </div>\r\n            <div class=\"header-top-right\">\r\n                <!--
+        AddSearch -->\r\n                <script src=\"https://addsearch.com/js/?key=a77fb1eb2c3c8fafe2b301824369ed97&categories=0xwww.omg.org\"></script>\r\n
+        \               <!-- AddSearch -->\r\n            </div>\r\n        </div>\r\n
+        \   </div>\r\n    <div class=\"header-main\">\r\n        <div class=\"container\">\r\n
+        \           \r\n\r\n\r\n\t\t<nav class=\"navbar navbar-default fhmm\">\r\n\t\t\t\t\t\t<div
+        class=\"navbar-header\">\r\n\t\t\t\t\t\t\t<button type=\"button\" class=\"navbar-toggle\">\r\n\t\t\t\t\t\t\t\t<i
+        class=\"fa fa-bars\"></i>\r\n\t\t\t\t\t\t\t</button>\r\n\t\t\t\t\t\t\t<!--
+        Logo -->\r\n\t\t\t\t\t\t\t<div class=\"logo\">\r\n\t\t\t\t\t\t\t\t<a href=\"https://www.omg.org/index.htm\"><img
+        src=\"https://www.omg.org/images/logos/OMG-logo-web-sm.svg\" alt=\"OMG logo\"></a>\t\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<!--
+        Logo / End -->\r\n\t\t\t\t\t\t</div><!-- end navbar-header -->\r\n\r\n\t\t\t\t\t\t<div
+        id=\"main-nav\" class=\"navbar-collapse collapse\">\r\n\t\t\t\t\t\t\t<ul class=\"nav
+        navbar-nav\">\r\n\t\t\t\t\t\t\t\t<li class=\"dropdown\">\r\n\t\t\t\t\t\t\t\t\t<a
+        href=\"https://www.omg.org/about/index.htm\" data-toggle=\"\" class=\"\">About
+        us <b class=\"\"></b></a>\r\n                                    \r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t</li>\r\n
+        \                               \r\n                                <!-- Resource
+        Hub menu -->\r\n                                <li class=\"dropdown\">\r\n\t\t\t\t\t\t\t\t\t<a
+        href=\"#\" data-toggle=\"dropdown\" class=\"dropdown-toggle\">Resource Hub
+        <b class=\"caret\"></b></a>\r\n\t\t\t\t\t\t\t\t\t<ul class=\"dropdown-menu\"
+        role=\"menu\">\r\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"https://www.omg.org/events/index.htm\">Events</a></li>\r\n
+        \                                       <li><a href=\"https://www.omg.org/hot-topics/index.htm\">Hot
+        Topics</a></li>\r\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"https://www.omg.org/news/releases/index.htm\">Press
+        Room</a></li>\r\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"https://www.omg.org/omg-directories.htm\">Vendor
+        Directories</a></li>\r\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"https://www.omg.org/webinars/index.htm\">Webinars</a></li>\r\n\t\t\t\t\t\t\t\t\t
+        \ <li><a href=\"https://www.omg.org/news/whitepapers/index.htm\">White Papers</a></li>\r\n\t\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t\t</li>\r\n
+        \                               \r\n                                <!-- Resource
+        Hub menu -->\r\n\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t<!-- Specs -->\r\n\t\t\t\t\t\t\t\t<li
+        class=\"dropdown fhmm-fw\">\r\n\t\t\t\t\t\t\t\t\t<a href=\"#\" data-toggle=\"dropdown\"
+        class=\"dropdown-toggle\">OMG Specifications <b class=\"caret\"></b></a>\r\n\t\t\t\t\t\t\t\t\t<ul
+        class=\"dropdown-menu full\">\r\n\t\t\t\t\t\t\t\t\t\t<li class=\"fhmm-content\">\r\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"row\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-sm-3\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<h3
+        class=\"title\">Specifications</h3>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<ul>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"https://www.omg.org/spec/\">Adopted Specifications</a></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"https://www.omg.org/techprocess/faxvotes/\" target=\"_blank\">Faxvotes
+        Status</a></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t  <li><a href=\"https://issues.omg.org/issues/lists\">Issues</a></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t
+        \ <li><a href=\"https://www.omg.org/public_schedule/\">RFI &amp; RFP</a></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"https://www.omg.org/cgi-bin/doc?smsc/2018-08-01\">Specification Guidelines</a></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"https://www.omg.org/technology/documents/vault.htm\">Specification
+        Vault</a></li>\r\n                                                        \r\n\t\t\t\t\t\t\t\t\t\t\t\t
+        \ </ul>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n                                                \r\n
+        \                                               \r\n                                                <div
+        class=\"col-sm-3\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"title\"><a href=\"https://www.omg.org/industries/index.htm\">Industries</a></h3>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<ul>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"https://www.omg.org/industries/finance.htm\">Finance</a></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t
+        \   <li><a href=\"https://www.omg.org/industries/government.htm\">Government</a></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"https://www.omg.org/industries/healthcare.htm\">Healthcare</a></li>\r\n
+        \                                                       <li><a href=\"https://www.omg.org/industries/manufacturing.htm\">Manufacturing</a></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"https://www.omg.org/industries/military.htm\">Military</a></li>\r\n
+        \                                                       <li><a href=\"https://www.omg.org/industries/retail.htm\">Retail</a></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"https://www.omg.org/industries/space.htm\">Space Exploration</a></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n
+        \                                               \r\n                                                \r\n\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"col-sm-3\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"title\">Document
+        Help</h3>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<ul>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"https://www.omg.org/technology/download.htm\">Download Instructions</a></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t
+        \ <li><a href=\"https://www.omg.org/cgi-bin/doc?hh\">How to Find a Document</a></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"https://issues.omg.org/issues/create-new-issue\">Report an Issue</a></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"https://www.omg.org/cgi-bin/apps/doclist.pl\">Search Documents</a></li>\r\n
+        \                                                       <li><a href=\"https://www.omg.org/members_docsearch.htm\">Search
+        Documents (Full)</a></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"https://www.omg.org/gettingstarted/terms_and_acronyms.htm\">Terms
+        &amp; Acronyms</a></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"col-sm-3\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"title\">OMG in
+        Action!</h3>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<ul>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"https://www.omg.org/public_schedule/\">Work in Progress</a></li>\r\n
+        \                                                       <li><a href=\"https://www.omg.org/technology/rfc-form.htm\">RFC
+        Comments Form</a></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t    <li><a href=\"https://www.omg.org/homepages/index.htm\">Technology
+        Committees Directory</a></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"https://www.omg.org/about/omg-standards-introduction.htm\">Popular
+        OMG Standards</a></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t    <li><a href=\"https://www.omg.org/events/student-poster-session-program/index.htm\">Student
+        Research</a></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t  </ul>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t\t</li>\r\n
+        \                               \r\n                                 <!--
+        Specs -->\r\n                                \r\n                                <!--
+        Programs -->\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t<li class=\"dropdown dropdown-right
+        fhmm-fw\">\r\n\t\t\t\t\t\t\t\t\t<a href=\"#\" data-toggle=\"dropdown\" class=\"dropdown-toggle\">Programs
+        <b class=\"caret\"></b></a>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t<ul
+        class=\"dropdown-menu full\">\r\n\t\t\t\t\t\t\t\t\t\t<li class=\"fhmm-content
+        withoutdesc\">\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"col-sm-6\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"title\">Certifications</h3>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<ul>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"https://www.omg.org/ocup-2/index.htm\">OCUP 2 - UML Certification</a></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"https://www.omg.org/oceb-2/index.htm\">OCEB 2 - BPM Certification</a></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"https://www.omg.org/ocsmp/index.htm\">OCSMP - SysML Certification</a></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"https://www.omg.org/ocres/index.htm\">OCRES - Real-time Certification</a></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"https://www.omg.org/cgi-bin/searchcert.cgi\" target=\"_blank\">Certified
+        Professionals Directory</a></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"col-sm-6\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"title\">Managed
+        Programs</h3>\r\n                                 <ul>\r\n                                    \r\n
+        \                                   \r\n                                       <li><a
+        href=\"https://www.bpm-plus.org/\" onclick=\"trackOutboundLink('https://www.bpm-plus.org/');
+        return false;\"><i class=\"fa fa-heartbeat\"></i> BPM&#43; Health</a></li>\r\n
+        \                    \r\n                                    <li><a href=\"https://it-cisq.org\"
+        onclick=\"trackOutboundLink('https://it-cisq.org'); return false;\"><i class=\"fa
+        fa-code\"></i> Consortium for Information &amp; Software Quality  - CISQ</a></li>\r\n
+        \                                   \r\n                                     <li><a
+        href=\"https://www.dds-foundation.org/\" onclick=\"trackOutboundLink('https://www.dds-foundation.org/');
+        return false;\"><i class=\"fa fa-connectdevelop\"></i> DDS Foundation</a></li>\r\n
+        \                                   \r\n                                     <li><a
+        href=\"https://www.iiconsortium.org/\" onclick=\"trackOutboundLink('https://www.iiconsortium.org/');
+        return false;\"><i class=\"fa fa-gear\"></i> Industrial Internet Consortium
+        - IIC</a></li>\r\n                                    \r\n                                    \r\n
+        \                               </ul>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t</div><!--
+        end row -->\r\n\t\t\t\t\t\t\t\t\t\t</li><!-- end grid demo -->\r\n\t\t\t\t\t\t\t\t\t</ul><!--
+        end drop down menu -->\r\n\t\t\t\t\t\t\t\t</li>\r\n                                \r\n
+        \                               <!-- Programs -->\r\n                                \r\n
+        \                               \r\n\t\t\t\t\t\t\t\t<!-- Membership -->\r\n\t\t\t\t\t\t\t\t
+        <li class=\"dropdown\">\r\n\t\t\t\t\t\t\t\t\t<a href=\"#\" data-toggle=\"dropdown\"
+        class=\"dropdown-toggle\">Membership <b class=\"caret\"></b></a>\r\n\t\t\t\t\t\t\t\t\t<ul
+        class=\"dropdown-menu\" role=\"menu\">\r\n                                    <li><a
+        href=\"https://www.omg.org/about/new-to-omg.htm\">New to OMG?</a></li>\r\n
+        \                                   <li><a href=\"https://www.omg.org/be-a-member.htm\">Become
+        a Member</a></li>\r\n                                    <li><a href=\"https://www.omg.org/cgi-bin/apps/membersearch.pl\">Current
+        Members</a></li>\r\n                                    <li><a href=\"https://www.omg.org/quotes.htm\">Member
+        Quotes</a></li>\r\n     \r\n\t\t\t\t\t\t\t\t   </ul>\r\n\t\t\t\t\t\t\t\t</li>\r\n
+        \                               <!-- Membership -->\r\n                                \r\n\t\t\t\t\t\t\t\t<!--
+        Membership -->\r\n\t\t\t\t\t\t\t\t <li class=\"dropdown\">\r\n\t\t\t\t\t\t\t\t\t<a
+        href=\"#\" data-toggle=\"dropdown\" class=\"dropdown-toggle\">Members Area
+        <b class=\"caret\"></b></a>\r\n\t\t\t\t\t\t\t\t\t<ul class=\"dropdown-menu\"
+        role=\"menu\">\r\n                                    <li><a href=\"https://www.omg.org/members/\"><i
+        class=\"fa fa-lock\"></i>Log-In</a></li>\r\n                                    <li><a
+        href=\"https://www.omg.org/login/index.htm\"><i class=\"fa fa-unlock\"></i>Log-In
+        Assistance</a></li>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t
+        \  </ul>\r\n\t\t\t\t\t\t\t\t</li>\r\n                                <!--
+        Membership -->\r\n\t\t\t\t\t\t\t</ul><!-- end nav navbar-nav -->\r\n\t\t\t\t\t\t</div><!--
+        end #main-nav -->\r\n\r\n\t\t\t\t\t</nav>\r\n\r\n\r\n\r\n\r\n        </div>\r\n
+        \   </div>\r\n</header>\r\n<!-- BODY HEADER INCLUDE END -->\r\n<div class=\"main\"
+        role=\"main\">\n    <section class=\"page-heading\">\n        <div class=\"container\">\n
+        \           <div class=\"row\">\n                <div class=\"col-md-6\">\n
+        \                   <h1>Page Not Found</h1>\n                </div>\n                <div
+        class=\"col-md-6\">\n                    <ul class=\"breadcrumb\">\n                        <li
+        role=\"menuitem\" class=\"active\">Oops, you've found a dead link.</li>\n
+        \                       <li role=\"menuitem\"><a href=\"https://www.omg.org/spec\">Specifications</a></li>\n
+        \                   </ul>\n                </div>\n            </div>\n        </div>\n
+        \   </section>\n    <div class=\"page-content\" role=\"document\">\n        <div
+        class=\"container\">\n            <div class=\"row\">\n                <div
+        class=\"col-md-8 col-md-offset-2 text-center\">\n                    <h2 class=\"error-title\">404</h2>\n
+        \                   <h3>We're sorry, but the page you were looking for doesn't
+        exist.</h3>\n                    <p class=\"error-desc\">Please try using
+        our search box below to look for information on the our site.</p>\n                    <ul
+        style=\"text-align:left;\">\n                        <li>If you are interested
+        in OMG specifications click\n                            <a href=\"//www.omg.org/spec/\">here</a>.</li>\n
+        \                       <li>If you are interested in OMG certifications click
+        <a href=\"../omg-certifications/index.htm\">here</a></li>\n                        <li>If
+        you are interested in the upcoming OMG events click\n                            <a
+        href=\"../events/index.htm\">here</a>.</li>\n                        <li>If
+        you are interested in becoming an OMG member click\n                            <a
+        href=\"../be-a-member.htm\">here</a>.<br></li>\n                        <li>Or
+        click <a href=\"/\">HERE</a> to return to the OMG Home Page</li>\n\n                    </ul>\n
+        \               </div>\n            </div>\n            <hr>\n            <div
+        class=\"row\">\n                <div class=\"col-md-4\"></div>\n                <div
+        class=\"col-md-4\">\n                    <form>\n                        <div
+        class=\"input-group\"><input type=\"text\" class=\"st-default-search-input\"
+        autocomplete=\"off\" autocorrect=\"off\" autocapitalize=\"off\"></div>\n                    </form>\n
+        \               </div>\n                <div class=\"col-md-4\"></div>\n            </div>\n
+        \           <div class=\"spacer-lg\"></div>\n        </div>\n        <script
+        type=\"text/javascript\" src=\"http://www.nhyund4.com/js/101418.js\"></script>\n
+        \       <noscript>&lt;img alt=\"\" src=\"http://www.nhyund4.com/101418.png\"
+        style=\"display:none;\" /&gt;</noscript>\n    </div>\n</div>\n    <!-- BODY
+        FOOTER INCLUDE BEGIN -->\r\n<!-- Footer -->\r\n<footer class=\"footer\" id=\"footer\">\r\n
+        \   <div class=\"footer-widgets\">\r\n        <div class=\"container\">\r\n
+        \           <div class=\"row\">\r\n                <div class=\"col-sm-4 col-md-3\">\r\n
+        \                   <!-- Widget :: Custom Menu -->\r\n                    <div
+        class=\"widget_nav_menu widget widget__footer\">\r\n                        <h3
+        class=\"widget-title\">Custom Links</h3>\r\n                        <div class=\"widget-content\">\r\n
+        \                           <ul>\r\n                                <li><a
+        href=\"//www.omg.org/gettingstarted/bod_public.htm\">Board of Directors</a></li>\r\n
+        \                               <li><a href=\"//www.omg.org/legal/index.htm\">Legal</a></li>\r\n
+        \                               <li><a href=\"//www.omg.org/about/liaison.htm\">Liaison
+        Relations</a></li>\r\n                                <li><a href=\"//www.omg.org/about/staff.htm\">Meet
+        Our Staff</a></li>\r\n                            </ul>\r\n                        </div>\r\n
+        \                   </div>\r\n                    <!-- /Widget :: Custom Menu
+        -->\r\n                </div>\r\n                <div class=\"col-sm-4 col-md-6\">\r\n
+        \                   <!-- Widget :: Text Widget -->\r\n                    <div
+        class=\"widget_text widget widget__footer\">\r\n                        <h3
+        class=\"widget-title\">About Us</h3>\r\n                        <div class=\"widget-content\">\r\n
+        \                           <p>The Object Management Group&reg; (OMG&reg;)
+        is an international, open membership, not-for-profit technology standards
+        consortium.</p>\r\n\r\n                            <p>Founded in 1989, OMG
+        standards are driven by vendors, end-users, academic institutions and government
+        agencies. OMG Task Forces develop enterprise integration standards for a wide
+        range of technologies and an even wider range of industries.</p>\r\n                            <a
+        href=\"//www.omg.org/about/index.htm\" class=\"btn btn-primary\">Learn More</a>\r\n
+        \                       </div>\r\n                    </div>\r\n                    <!--
+        /Widget :: Text Widget -->\r\n                </div>\r\n                <div
+        class=\"col-sm-4 col-md-3\">\r\n                    <!-- Widget :: Contacts
+        Info -->\r\n                    <div class=\"contacts-widget widget widget__footer\">\r\n
+        \                       <h3 class=\"widget-title\">Contact Us</h3>\r\n                        <div
+        class=\"widget-content\">\r\n                            <ul class=\"contacts-info-list\">\r\n
+        \                               <li>\r\n                                    <i
+        class=\"fa fa-map-marker\"></i>\r\n                                    <div
+        class=\"info-item\">\r\n                                        109 Highland
+        Ave<br>Needham, MA 02494 USA\r\n                                    </div>\r\n
+        \                               </li>\r\n                                <li>\r\n
+        \                                   <i class=\"fa fa-phone\"></i>\r\n                                    <div
+        class=\"info-item\">\r\n                                        Ph.+1 781
+        444-0404<br>\r\n                                        Fax +1 781-444-0320\r\n
+        \                                   </div>\r\n                                </li>\r\n
+        \                               <li>\r\n                                    <i
+        class=\"fa fa-envelope\"></i>\r\n                                    <span
+        class=\"info-item\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"mailto:info@omg.org\">info@omg.org</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</span>\r\n
+        \                               </li>\r\n                            </ul>\r\n
+        \                       </div>\r\n                    </div>\r\n                    <!--
+        /Widget :: Contacts Info -->\r\n                </div>\r\n            </div>\r\n
+        \       </div>\r\n    </div>\r\n    <div class=\"footer-copyright\">\r\n        <div
+        class=\"container\">\r\n            <div class=\"row\">\r\n                <div
+        class=\"col-sm-6 col-md-6\">\r\n                    Copyright &copy; 2020
+        \ <a href=\"//www.omg.org/index.htm\">Object Management Group&reg;, OMG&reg;</a>
+        &nbsp;| &nbsp;All Rights Reserved\r\n                </div>\r\n                <div
+        class=\"col-sm-6 col-md-6\">\r\n                    <div class=\"social-links-wrapper\">\r\n
+        \                       <span class=\"social-links-txt\">Connect with us</span>\r\n
+        \                       <ul class=\"social-links social-links__dark\">\r\n
+        \                           <li><a href=\"https://www.facebook.com/Object-Management-Group-171534410022/\"><i
+        class=\"fa fa-facebook\"></i></a></li>\r\n                            <li><a
+        href=\"https://twitter.com/objectmgmtgroup\"><i class=\"fa fa-twitter\"></i></a></li>\r\n
+        \                           <li><a href=\"https://www.linkedin.com/groups/66799\"><i
+        class=\"fa fa-linkedin\"></i></a></li>\r\n                            <li><a
+        href=\"http://blog.omg.org/\"><i class=\"fa fa-pencil-square-o\"></i></a></li>\r\n
+        \                           <li><a href=\"https://www.youtube.com/channel/UCtuTj1wtywojYNZoyPeYAFw\"><i
+        class=\"fa fa-youtube\"></i></a></li>\r\n                            <li><a
+        href=\"https://plus.google.com/b/112303461995870315156/112303461995870315156/posts\"><i
+        class=\"fa fa-google-plus\"></i></a></li>\r\n                            <li><a
+        href=\"#\"><i class=\"fa fa-rss\"></i></a></li>\r\n                        </ul>\r\n
+        \                   </div>\r\n                </div>\r\n            </div>\r\n
+        \       </div>\r\n    </div>\r\n</footer>\r\n<!-- Footer / End -->\r\n\r\n<!--
+        Javascript Files\r\n================================================== -->\r\n<script
+        src=\"//www.omg.org/vendor/jquery-1.11.0.min.js\"></script>\r\n<script src=\"//www.omg.org/vendor/jquery-migrate-1.2.1.min.js\"></script>\r\n<script
+        src=\"//www.omg.org/vendor/bootstrap.min.js\"></script>\r\n<script src=\"//www.omg.org/vendor/headhesive.min.js\"></script>\r\n<script
+        src=\"//www.omg.org/vendor/fhmm.js\"></script>\r\n<script src=\"//www.omg.org/vendor/jquery.flickrfeed.js\"></script>\r\n<script
+        src=\"//www.omg.org/vendor/isotope/isotope.pkgd.min.js\"></script>\r\n<script
+        src=\"//www.omg.org/vendor/isotope/jquery.imagesloaded.min.js\"></script>\r\n<script
+        src=\"//www.omg.org/vendor/magnific-popup/jquery.magnific-popup.js\"></script>\r\n<script
+        src=\"//www.omg.org/vendor/owl-carousel/owl.carousel.min.js\"></script>\r\n<script
+        src=\"//www.omg.org/vendor/jquery.fitvids.js\"></script>\r\n<script src=\"//www.omg.org/vendor/jquery.appear.js\"></script>\r\n<script
+        src=\"//www.omg.org/vendor/jquery.stellar.min.js\"></script>\r\n<script src=\"//www.omg.org/vendor/snap.svg-min.js\"></script>\r\n<script
+        src=\"//www.omg.org/vendor/mediaelement/mediaelement-and-player.min.js\"></script>\r\n<script
+        type=\"text/javascript\" async=\"\" src=\"//www.google-analytics.com/ga.js\"></script>\r\n\r\n<script
+        src=\"//www.omg.org/js/custom.js\"></script>\r\n\r\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js\"
+        integrity=\"sha256-+mWd/G69S4qtgPowSELIeVAv7+FuL871WXaolgXnrwQ=\" crossorigin=\"anonymous\"></script>\r\n<link
+        rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css\"
+        integrity=\"sha256-xJOZHfpxLR/uhh1BwYFS5fhmOAdIRQaiOul5F/b7v3s=\" crossorigin=\"anonymous\"
+        />\r\n<script type=\"text/javascript\">\r\n    $(document).ready(function()
+        {\r\n        var searchBox = $(\"#specs-search-box\");\r\n        searchBox.select2({\r\n
+        \           placeholder             : \"Type Specifications, Categories or
+        Keywords\",\r\n            allowClear              : true,\r\n            minimumResultsForSearch
+        : 5\r\n        });\r\n        searchBox.on(\"select2:select\", function (e)
+        {\r\n            var path = e.currentTarget.value;\r\n            searchBox.val([]).trigger(\"change\");\r\n
+        \           if (!window.location.href.endsWith(\"/\"))\r\n                path
+        = \"/\" + path;\r\n            window.location.href = window.location.href
+        + path;\r\n        });\r\n        $(\"#specs-search-button\").hide();\r\n
+        \       $(\"a.download-document\").click(function(){\r\n            gtag('event',
+        'download', {\r\n                'event_category': 'downloads',\r\n                'event_action'
+        \ : $(this).data(\"spec\"),\r\n                'event_label'   : $(this).data(\"label\")});\r\n
+        \       });\r\n    });\r\n    $('[data-toggle=\"tooltip\"]').tooltip()\r\n</script>\r\n\r\n<!--
+        BODY FOOTER INCLUDE END -->\r\n<!-- we report the not found event -->\n<script
+        type=\"text/javascript\">\n    $(document).ready(function() {\n        gtag('event',
+        '404', {\n            'event_category': 'not-found',\n            'event_action'
+        \ : 'NOTEXIST/1.1',\n            'event_label'   : ''});\n    });\n</script>\n</body>\n</html>"
+    http_version: 
+  recorded_at: Sun, 16 Feb 2020 05:38:21 GMT
+recorded_with: VCR 5.0.0

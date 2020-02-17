@@ -13,6 +13,13 @@ module RelatonOmg
         url += "/" + version if version
         doc = Nokogiri::HTML open(URI(url))
         OmgBibliographicItem.new item(doc, acronym)
+      rescue OpenURI::HTTPError => e
+        if e.io.status[0] == "404"
+          warn %{[relaton-omg] no document found for "#{ref}" reference.}
+          return
+        end
+
+        raise RelatonBib::RequestError, "Unable acces #{url} (#{e.io.status.join(" ")}"
       end
 
       private
@@ -21,13 +28,16 @@ module RelatonOmg
         {
           id: fetch_id(doc, acronym),
           fetched: Date.today.to_s,
+          docid: fetch_docid(doc, acronym),
           title: fetch_title(doc),
           abstract: fetch_abstract(doc),
           version: fetch_version(doc),
           date: fetch_date(doc),
           docstatus: fetch_status(doc),
           link: fetch_link(doc),
-          relation: fetch_relation(doc)
+          relation: fetch_relation(doc),
+          keyword: fetch_keyword(doc),
+          license: fetch_license(doc)
         }
       end
 
@@ -39,6 +49,14 @@ module RelatonOmg
         content = doc.at('//dt[.="Title:"]/following-sibling::dd').text
         title = RelatonBib::FormattedString.new content: content, language: "en", script: "Latn"
         [RelatonBib::TypedTitleString.new(type: "main", title: title)]
+      end
+
+      def fetch_docid(doc, acronym)
+        id = [acronym]
+        if (ver = version(doc))
+          id << ver
+        end
+        [RelatonBib::DocumentIdentifier.new(id: id.join(" "), type: "OMG")]
       end
 
       def fetch_abstract(doc)
@@ -78,7 +96,28 @@ module RelatonOmg
       end
 
       def fetch_relation(doc)
-        []
+        current_version = version(doc)
+        v = doc.xpath('//h2[.="History"]/following-sibling::section/div/table/tbody/tr')
+        v.reduce([]) do |mem, row|
+          ver = row.at("td").text
+          unless ver == current_version
+            acronym = row.at('td[3]/a')[:href].split("/")[4]
+            fref = RelatonBib::FormattedRef.new content: "OMG #{acronym} #{ver}"
+            bibitem = OmgBibliographicItem.new formattedref: fref
+            mem << { type: "obsoletes", bibitem: bibitem }
+          end
+          mem
+        end
+      end
+
+      def fetch_keyword(doc)
+        doc.xpath('//dt[.="Categories:"]/following-sibling::dd/ul/li/a/em').map &:text
+      end
+
+      def fetch_license(doc)
+        doc.xpath(
+          '//dt/span/a[contains(., "IPR Mode")]/../../following-sibling::dd/span'
+        ).map { |l| l.text.match(/[\w\s-]+/).to_s.strip }
       end
     end
   end

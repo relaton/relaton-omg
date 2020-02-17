@@ -4,6 +4,8 @@ require "relaton_omg/version"
 require "relaton_omg/scrapper"
 require "relaton_omg/omg_bibliography"
 require "relaton_omg/omg_bibliographic_item"
+require "relaton_omg/xml_parser"
+require "relaton_omg/hash_converter"
 
 module RelatonOmg
   # Returns hash of XML reammar

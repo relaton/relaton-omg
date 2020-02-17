@@ -1,0 +1,113 @@
+= RelatonOmg
+
+image:https://img.shields.io/gem/v/relaton-omg.svg["Gem Version", link="https://rubygems.org/gems/relaton-omg"]
+image:https://github.com/relaton/relaton-omg/workflows/macos/badge.svg["Build Status (macOS)", link="https://github.com/relaton/relaton-omg/actions?workflow=macos"]
+image:https://github.com/relaton/relaton-omg/workflows/windows/badge.svg["Build Status (Windows)", link="https://github.com/relaton/relaton-omg/actions?workflow=windows"]
+image:https://github.com/relaton/relaton-omg/workflows/ubuntu/badge.svg["Build Status (Ubuntu)", link="https://github.com/relaton/relaton-omg/actions?workflow=ubuntu"]
+image:https://codeclimate.com/github/relaton/relaton-omg/badges/gpa.svg["Code Climate", link="https://codeclimate.com/github/relaton/relaton-omg"]
+image:https://img.shields.io/github/issues-pr-raw/relaton/relaton-omg.svg["Pull Requests", link="https://github.com/relaton/relaton-omg/pulls"]
+image:https://img.shields.io/github/commits-since/relaton/relaton-omg/latest.svg["Commits since latest",link="https://github.com/relaton/relaton-omg/releases"]
+
+RelatonOmg is a Ruby gem that search and fetch standards from https://www.omg.org[The Object Management Group (OMG)].
+
+The standards scrape form https://www.omg.org/spec
+
+== Installation
+
+Add this line to your application's Gemfile:
+
+[source,ruby]
+----
+gem 'relaton-omg'
+----
+
+And then execute:
+
+    $ bundle install
+
+Or install it yourself as:
+
+    $ gem install relaton-omg
+
+== Usage
+
+=== Search document
+
+[source,ruby]
+----
+require 'relaton_omg'
+
+item = RelatonOmg::OmgBibliography.search 'OMG AMI4CCM 1.0'
+=> #<RelatonOmg::OmgBibliographicItem:0x007fda17eab2f0
+...
+
+# Return nil if document doesn't exist.
+RelatonOmg::OmgBibliography.search 'OMG 1111'
+[relaton-omg] no document found for "OMG 1111" reference.
+=> nil
+----
+
+=== Serialization
+
+[source,ruby]
+----
+item.to_xml
+=><bibitem id="AMI4CCM1.0">
+    <fetched>2020-02-17</fetched>
+    <title type="main" format="text/plain" language="en" script="Latn">Asynchronous Method Invocation for CCM</title>
+    <uri type="src">https://www.omg.org/spec/AMI4CCM/1.0/</uri>
+    <uri type="pdf">https://www.omg.org/spec/AMI4CCM/1.0/PDF</uri>
+    <docidentifier type="OMG">AMI4CCM 1.0</docidentifier>
+    <date type="published">
+        <on>2013-03</on>
+    </date>
+    <version>
+        <revision-date>2013-03-01</revision-date>
+        <draft>1.0</draft>
+    </version>
+    <abstract format="text/plain" language="en" script="Latn">This specification defines a mechanism to perform asynchronous method invocation for CCM (AMI4CCM).</abstract>
+    <status>
+        <stage>formal</stage>
+    </status>
+    <license>RF-Limited</license>
+    <keyword>Corba Platform</keyword>
+    <keyword>Component Architecture</keyword>
+  </bibitem>"
+----
+
+=== Create bibliographic item form XML
+
+[source,ruby]
+----
+item = RelatonOmg::OmgBibliographicItem.from_xml 'spec/fixtures/omg_ami4ccm_1_0.xml'
+=> #<RelatonOmg::OmgBibliographicItem:0x007fb351582e90
+...
+----
+
+=== Create bibliographic item form Hash
+[source,ruby]
+----
+hash = RelatonOmg::OmgBibliographicItem.from_xml 'spec/fixtures/omg_ami4ccm_1_0.xml'
+=> {"id"=>"AMI4CCM1.0",
+...
+
+item = RelatonOmg::OmgBibliographicItem.from_hash hash
+=> #<RelatonOmg::OmgBibliographicItem:0x007f85b0247ec0
+...
+----
+
+=== Create bibliographic item form YAML
+[source,ruby]
+----
+item = RelatonOmg::OmgBibliographicItem.from_yaml 'spec/fixtures/omg_ami4ccm_1_0.yaml'
+=> #<RelatonOmg::OmgBibliographicItem:0x007f85a00f45d8
+...
+----
+
+== Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/metanorma/relaton-ietf.
+
+== License
+
+The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).

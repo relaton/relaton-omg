@@ -1,8 +1,9 @@
 <bibitem id="AMI4CCM1.1">
-  <fetched>2020-02-10</fetched>
+  <fetched>2020-02-16</fetched>
   <title type="main" format="text/plain" language="en" script="Latn">Asynchronous Method Invocation for CCM</title>
   <uri type="src">https://www.omg.org/spec/AMI4CCM/1.1/</uri>
   <uri type="pdf">https://www.omg.org/spec/AMI4CCM/1.1/PDF</uri>
+  <docidentifier type="OMG">AMI4CCM 1.1</docidentifier>
   <date type="published">
     <on>2015-08</on>
   </date>
@@ -14,4 +15,12 @@
   <status>
     <stage>formal</stage>
   </status>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref format="text/plain">OMG AMI4CCM 1.0</formattedref>
+    </bibitem>
+  </relation>
+  <license>RF-Limited</license>
+  <keyword>Corba Platform</keyword>
+  <keyword>Component Architecture</keyword>
 </bibitem>
