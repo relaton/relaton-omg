@@ -69,6 +69,13 @@ RSpec.describe RelatonOmg do
       expect(hash).to eq YAML.load_file(file)
     end
 
+    it "warn if XML doesn't have bibitem or bibdata element" do
+      item = ""
+      expect { item = RelatonOmg::XMLParser.from_xml "" }.to output(/can't find bibitem/)
+        .to_stderr
+      expect(item).to be_nil
+    end
+
     it "create from YAML" do
       item = RelatonOmg::OmgBibliographicItem.from_yaml "spec/fixtures/omg_ami4ccm_1_0.yaml"
       expect(item.to_xml).to be_equivalent_to File.read(

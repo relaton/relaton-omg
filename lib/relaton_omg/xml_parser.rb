@@ -6,8 +6,12 @@ module RelatonOmg
       def from_xml(xml)
         doc = Nokogiri::XML(xml)
         doc.remove_namespaces!
-        ietfitem = doc.at("/bibitem|/bibdata")
-        RelatonOmg::OmgBibliographicItem.new(item_data(ietfitem))
+        item = doc.at("/bibitem|/bibdata")
+        if item
+          RelatonOmg::OmgBibliographicItem.new(item_data(item))
+        else
+          warn "[relato-omg] can't find bibitem or bibdata element in the XML"
+        end
       end
 
       private
