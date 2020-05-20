@@ -28,7 +28,8 @@ abstract:
   script: Latn
   format: text/plain
 docstatus:
-  stage: formal
+  stage:
+    value: formal
 fetched: '2020-02-16'
 keyword:
 - Corba Platform
