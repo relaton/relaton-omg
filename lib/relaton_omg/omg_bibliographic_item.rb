@@ -6,9 +6,8 @@ module RelatonOmg
     # @param doctype [String]
     # @param keyword [Array<String>]
     def initialize(**args)
-      @doctype = args.delete :doctype
-      # @keyword = args.delete(:keyword) || []
       super
+      # @doctype = args[:doctype]
     end
 
     class << self
