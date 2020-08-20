@@ -1,15 +1,6 @@
 module RelatonOmg
   class OmgBibliographicItem < RelatonBib::BibliographicItem
     # @return [String, NilClass]
-    attr_reader :doctype
-
-    # @param doctype [String]
-    # @param keyword [Array<String>]
-    def initialize(**args)
-      super
-      # @doctype = args[:doctype]
-    end
-
     class << self
       # @param file [String] path to YAML file
       # @return [RelatonOmg::OmgBibliographicItem]
@@ -35,20 +26,7 @@ module RelatonOmg
     # @option opts [Symbol, NilClass] :date_format (:short), :full
     def to_xml(builder = nil, **opts)
       opts[:date_format] ||= :short
-      super builder, **opts do |b|
-        # if opts[:bibdata]
-        #   b.ext do
-        #     b.doctype doctype if doctype
-        #   end
-        # end
-      end
-    end
-
-    # @return [Hash]
-    def to_hash
-      hash = super
-      hash["doctype"] = doctype if doctype
-      hash
+      super
     end
   end
 end
