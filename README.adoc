@@ -36,6 +36,7 @@ Or install it yourself as:
 [source,ruby]
 ----
 require 'relaton_omg'
+=> true
 
 item = RelatonOmg::OmgBibliography.search 'OMG AMI4CCM 1.0'
 => #<RelatonOmg::OmgBibliographicItem:0x007fda17eab2f0
@@ -52,7 +53,7 @@ RelatonOmg::OmgBibliography.search 'OMG 1111'
 [source,ruby]
 ----
 item.to_xml
-=><bibitem id="AMI4CCM1.0">
+=>"<bibitem id="AMI4CCM1.0">
     <fetched>2020-02-17</fetched>
     <title type="main" format="text/plain" language="en" script="Latn">Asynchronous Method Invocation for CCM</title>
     <uri type="src">https://www.omg.org/spec/AMI4CCM/1.0/</uri>
@@ -87,7 +88,7 @@ item = RelatonOmg::OmgBibliographicItem.from_xml 'spec/fixtures/omg_ami4ccm_1_0.
 === Create bibliographic item form Hash
 [source,ruby]
 ----
-hash = YAML.load_file 'spec/fixtures/omg_ami4ccm_1_0.xml'
+hash = YAML.load_file 'spec/fixtures/omg_ami4ccm_1_0.yaml'
 => {"id"=>"AMI4CCM1.0",
 ...
 
@@ -106,7 +107,7 @@ item = RelatonOmg::OmgBibliographicItem.from_yaml 'spec/fixtures/omg_ami4ccm_1_0
 
 == Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/metanorma/relaton-ietf.
+Bug reports and pull requests are welcome on GitHub at https://github.com/relaton/relaton-ietf.
 
 == License
 
