@@ -21,10 +21,12 @@ module RelatonOmg
       end
     end
 
-    # @param builder
     # @param opts [Hash]
-    # @option opts [Symbol, NilClass] :date_format (:short), :full
-    def to_xml(builder = nil, **opts)
+    # @option opts [Nokogiri::XML::Builder] :builder XML builder
+    # @option opts [Boolean] :bibdata
+    # @option opts [String] :lang language
+    # @return [String] XML
+    def to_xml(**opts)
       opts[:date_format] ||= :short
       super
     end
