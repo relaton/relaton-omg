@@ -53,7 +53,7 @@ RSpec.describe RelatonOmg do
     end
 
     it "deals with unavailable service" do
-      io = double('io')
+      io = double("io")
       expect(io).to receive(:status).and_return(["503", "Service Unavailable"]).at_least(:once)
       expect(OpenURI).to receive(:open_uri).and_raise OpenURI::HTTPError.new("Service Unavailable", io)
       expect do

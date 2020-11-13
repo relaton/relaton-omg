@@ -7,16 +7,16 @@ title:
   script: Latn
   format: text/plain
 link:
-- type: src
-  content: https://www.omg.org/spec/AMI4CCM/1.0/
-- type: pdf
-  content: https://www.omg.org/spec/AMI4CCM/1.0/PDF
+- content: https://www.omg.org/spec/AMI4CCM/1.0/
+  type: src
+- content: https://www.omg.org/spec/AMI4CCM/1.0/PDF
+  type: pdf
 docid:
   id: AMI4CCM 1.0
   type: OMG
 date:
   type: published
-  value: '2013-03-01'
+  value: 2013-03
 version:
   revision_date: '2013-03-01'
   draft: '1.0'
