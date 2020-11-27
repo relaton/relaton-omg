@@ -19,11 +19,11 @@ http_interactions:
       message: '404'
     headers:
       Date:
-      - Wed, 11 Nov 2020 12:16:03 GMT
+      - Fri, 27 Nov 2020 12:39:49 GMT
       Server:
       - Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/5.4.16 mod_perl/2.0.10 Perl/v5.16.3
       X-Arequestid:
-      - 436x78552x1
+      - 459x581761x2
       X-Xss-Protection:
       - 1; mode=block
       X-Content-Type-Options:
@@ -35,8 +35,8 @@ http_interactions:
       X-Asen:
       - SEN-L16286435
       Set-Cookie:
-      - JSESSIONID=3FFDF804BB97EB6E1AB6A300799D43A8; Path=/; Secure; HttpOnly
-      - atlassian.xsrf.token=BZ1S-78OQ-47MN-5Q1I_4d93b4b4db48f8b423a5ec1862c05279239b85dc_lout;
+      - JSESSIONID=D99A87F6481105D229FEA54C8626F016; Path=/; Secure; HttpOnly
+      - atlassian.xsrf.token=BZ1S-78OQ-47MN-5Q1I_96b80a18dff2c947d2b9d72c8c3f47256bab2077_lout;
         Path=/; Secure
       X-Ausername:
       - anonymous
@@ -354,5 +354,5 @@ http_interactions:
         \   $(document).ready(function() {\n        gtag('event', '404', {\n            'event_category':
         'not-found',\n            'event_action'  : 'NOTEXIST/1.1',\n            'event_label'
         \  : ''});\n    });\n</script>\n</body>\n</html>"
-  recorded_at: Wed, 11 Nov 2020 12:16:03 GMT
+  recorded_at: Fri, 27 Nov 2020 12:39:49 GMT
 recorded_with: VCR 6.0.0
