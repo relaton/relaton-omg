@@ -11,8 +11,8 @@ module RelatonOmg
 
         url = URL_PATTERN + acronym
         url += "/" + version if version
-        doc = Nokogiri::HTML open(URI(url))
-        OmgBibliographicItem.new item(doc, acronym)
+        doc = Nokogiri::HTML OpenURI.open_uri(URI(url))
+        OmgBibliographicItem.new **item(doc, acronym)
       rescue OpenURI::HTTPError => e
         if e.io.status[0] == "404"
           warn %{[relaton-omg] no document found for "#{ref}" reference.}

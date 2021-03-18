@@ -11,7 +11,8 @@ module RelatonOmg
       # @param hash [Hash]
       # @return [RelatonOmg::OmgBibliographicItem]
       def from_hash(hash)
-        new RelatonOmg::HashConverter.hash_to_bib(hash)
+        bib_hash = RelatonOmg::HashConverter.hash_to_bib(hash)
+        new **bib_hash
       end
 
       # @param file [String] path to XML file

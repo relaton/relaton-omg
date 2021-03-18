@@ -17,7 +17,7 @@ module RelatonOmg
       # @param item_hash [Hash]
       # @return [RelatonOmg::OmgBibliographicItem]
       def bib_item(item_hash)
-        OmgBibliographicItem.new item_hash
+        OmgBibliographicItem.new **item_hash
       end
     end
   end

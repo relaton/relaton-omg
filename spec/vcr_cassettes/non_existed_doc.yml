@@ -19,11 +19,11 @@ http_interactions:
       message: '404'
     headers:
       Date:
-      - Fri, 27 Nov 2020 12:39:49 GMT
+      - Thu, 18 Mar 2021 13:40:31 GMT
       Server:
       - Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/5.4.16 mod_perl/2.0.10 Perl/v5.16.3
       X-Arequestid:
-      - 459x581761x2
+      - 580x2049599x1
       X-Xss-Protection:
       - 1; mode=block
       X-Content-Type-Options:
@@ -33,10 +33,10 @@ http_interactions:
       Content-Security-Policy:
       - frame-ancestors 'self'
       X-Asen:
-      - SEN-L16286435
+      - SEN-L16847816
       Set-Cookie:
-      - JSESSIONID=D99A87F6481105D229FEA54C8626F016; Path=/; Secure; HttpOnly
-      - atlassian.xsrf.token=BZ1S-78OQ-47MN-5Q1I_96b80a18dff2c947d2b9d72c8c3f47256bab2077_lout;
+      - JSESSIONID=94B7427DF5968D55A97C5C94C88E8F1F; Path=/; Secure; HttpOnly
+      - atlassian.xsrf.token=BZ1S-78OQ-47MN-5Q1I_b5a2bf0d535309e62fcc99d9a7d0047f65ea1091_lout;
         Path=/; Secure
       X-Ausername:
       - anonymous
@@ -126,7 +126,8 @@ http_interactions:
         <b class=\"caret\"></b></a>\r\n\t\t\t\t\t\t\t\t\t<ul class=\"dropdown-menu\"
         role=\"menu\">\r\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"https://www.omg.org/events/index.htm\">Events</a></li>\r\n
         \                                       <li><a href=\"https://www.omg.org/hot-topics/index.htm\">Hot
-        Topics</a></li>\r\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"https://www.omg.org/news/releases/index.htm\">Press
+        Topics</a></li>\r\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"https://pub.omg.org/\">OMG
+        Standardize</a></li>\r\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"https://www.omg.org/news/releases/index.htm\">Press
         Room</a></li>\r\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"https://www.omg.org/omg-directories.htm\">Vendor
         Directories</a></li>\r\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"https://www.omg.org/webinars/index.htm\">Webinars</a></li>\r\n\t\t\t\t\t\t\t\t\t
         \ <li><a href=\"https://www.omg.org/news/whitepapers/index.htm\">White Papers</a></li>\r\n\t\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t\t</li>\r\n
@@ -302,7 +303,7 @@ http_interactions:
         /Widget :: Contacts Info -->\n                </div>\n            </div>\n
         \       </div>\n    </div>\n    <div class=\"footer-copyright\">\n        <div
         class=\"container\">\n            <div class=\"row\">\n                <div
-        class=\"col-sm-6 col-md-6\">\n                    Copyright &copy; 2020  <a
+        class=\"col-sm-6 col-md-6\">\n                    Copyright &copy; 2021  <a
         href=\"//www.omg.org/index.htm\">Object Management Group&reg;, OMG&reg;</a>
         &nbsp;| &nbsp;All Rights Reserved\n                </div>\n                <div
         class=\"col-sm-6 col-md-6\">\n                    <div class=\"social-links-wrapper\">\n
@@ -354,5 +355,5 @@ http_interactions:
         \   $(document).ready(function() {\n        gtag('event', '404', {\n            'event_category':
         'not-found',\n            'event_action'  : 'NOTEXIST/1.1',\n            'event_label'
         \  : ''});\n    });\n</script>\n</body>\n</html>"
-  recorded_at: Fri, 27 Nov 2020 12:39:49 GMT
+  recorded_at: Thu, 18 Mar 2021 13:40:32 GMT
 recorded_with: VCR 6.0.0
