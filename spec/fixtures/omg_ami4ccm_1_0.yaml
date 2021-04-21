@@ -7,7 +7,7 @@ title:
   script: Latn
   format: text/plain
 link:
-- content: https://www.omg.org/spec/AMI4CCM/1.0/
+- content: https://www.omg.org/spec/AMI4CCM/1.0/About-AMI4CCM/
   type: src
 - content: https://www.omg.org/spec/AMI4CCM/1.0/PDF
   type: pdf
@@ -30,8 +30,9 @@ abstract:
 docstatus:
   stage:
     value: formal
-fetched: '2020-02-16'
+fetched: '2021-04-21'
 keyword:
 - Corba Platform
 - Component Architecture
+- Domain
 license: RF-Limited

@@ -60,7 +60,7 @@ module RelatonOmg
       end
 
       def fetch_abstract(doc)
-        content = doc.at('//section[@id="document-metadata"]/p').text
+        content = doc.at('//section[@id="document-metadata"]/div/div/p').text
         [{ content: content, language: "en", script: "Latn" }]
       end
 
@@ -69,7 +69,7 @@ module RelatonOmg
       end
 
       def version(doc)
-        doc.at('//dt[.="Version:"]/following-sibling::dd/p/text()').text.strip
+        doc.at('//dt[.="Version:"]/following-sibling::dd/p/span').text
       end
 
       def fetch_date(doc)
