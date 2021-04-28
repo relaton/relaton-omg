@@ -33,6 +33,11 @@ Or install it yourself as:
 
 === Search document
 
+Reference format is `OMG + {ACRONYM} + {VERSION}`
+
+- `ACRONYM` is an acronym from the list of specs https://www.omg.org/spec/#all
+- `VERSION` (optional) if omitted then the lastes version is fetched
+
 [source,ruby]
 ----
 require 'relaton_omg'
