@@ -61,6 +61,11 @@ RSpec.describe RelatonOmg do
       end.to raise_error RelatonBib::RequestError
     end
 
+    it "deals with incorrect reference" do
+      item = RelatonOmg::OmgBibliography.get "OMG Model Driven Architecture Guide rev. 2.0"
+      expect(item).to be_nil
+    end
+
     it "convert form XML to Hash" do
       item = RelatonOmg::OmgBibliographicItem.from_xml "spec/fixtures/omg_ami4ccm_1_0.xml"
       hash = item.to_hash
