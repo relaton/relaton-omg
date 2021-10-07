@@ -43,12 +43,12 @@ Reference format is `OMG + {ACRONYM} + {VERSION}`
 require 'relaton_omg'
 => true
 
-item = RelatonOmg::OmgBibliography.search 'OMG AMI4CCM 1.0'
+item = RelatonOmg::OmgBibliography.get 'OMG AMI4CCM 1.0'
 => #<RelatonOmg::OmgBibliographicItem:0x007fda17eab2f0
 ...
 
 # Return nil if document doesn't exist.
-RelatonOmg::OmgBibliography.search 'OMG 1111'
+RelatonOmg::OmgBibliography.get 'OMG 1111'
 [relaton-omg] no document found for "OMG 1111" reference.
 => nil
 ----
@@ -81,7 +81,18 @@ item.to_xml
   </bibitem>"
 ----
 
-=== Create bibliographic item form XML
+=== Typed links
+
+OMG documents may have `src` and `pdf` link types.
+
+[source,ruby]
+----
+item.link
+=> [#<RelatonBib::TypedUri:0x00007fa897a72208 @content=#<Addressable::URI:0x80c URI:https://www.omg.org/spec/AMI4CCM/1.0/About-AMI4CCM/>, @type="src">,
+ #<RelatonBib::TypedUri:0x00007fa897a71600 @content=#<Addressable::URI:0x820 URI:https://www.omg.org/spec/AMI4CCM/1.0/PDF>, @type="pdf">]
+----
+
+=== Create bibliographic item from XML
 
 [source,ruby]
 ----
@@ -90,7 +101,7 @@ item = RelatonOmg::OmgBibliographicItem.from_xml 'spec/fixtures/omg_ami4ccm_1_0.
 ...
 ----
 
-=== Create bibliographic item form Hash
+=== Create bibliographic item from Hash
 [source,ruby]
 ----
 hash = YAML.load_file 'spec/fixtures/omg_ami4ccm_1_0.yaml'
@@ -102,7 +113,7 @@ item = RelatonOmg::OmgBibliographicItem.from_hash hash
 ...
 ----
 
-=== Create bibliographic item form YAML
+=== Create bibliographic item from YAML
 [source,ruby]
 ----
 item = RelatonOmg::OmgBibliographicItem.from_yaml 'spec/fixtures/omg_ami4ccm_1_0.yaml'
