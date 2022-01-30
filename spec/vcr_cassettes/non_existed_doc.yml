@@ -19,7 +19,7 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Thu, 07 Oct 2021 09:12:51 GMT
+      - Fri, 28 Jan 2022 17:40:17 GMT
       Server:
       - Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/5.4.16 mod_perl/2.0.10 Perl/v5.16.3
       Content-Disposition:
@@ -32,7 +32,7 @@ http_interactions:
       - chunked
     body:
       encoding: ASCII-8BIT
-      string: '{"timestamp":"2021-10-07T09:12:51.459+00:00","status":404,"error":"Not
+      string: '{"timestamp":"2022-01-28T17:40:17.576+00:00","status":404,"error":"Not
         Found","message":"","path":"/spec/NOTEXIST/1.1"}'
-  recorded_at: Thu, 07 Oct 2021 09:12:51 GMT
+  recorded_at: Fri, 28 Jan 2022 17:40:17 GMT
 recorded_with: VCR 6.0.0
