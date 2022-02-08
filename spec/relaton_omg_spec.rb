@@ -66,7 +66,7 @@ RSpec.describe RelatonOmg do
       expect(item).to be_nil
     end
 
-    it "convert form XML to Hash" do
+    it "convert from XML to Hash" do
       item = RelatonOmg::OmgBibliographicItem.from_xml "spec/fixtures/omg_ami4ccm_1_0.xml"
       hash = item.to_hash
       file = "spec/fixtures/omg_ami4ccm_1_0.yaml"

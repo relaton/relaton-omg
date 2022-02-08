@@ -12,7 +12,7 @@ module RelatonOmg
         url = URL_PATTERN + acronym
         url += "/" + version if version
         doc = Nokogiri::HTML OpenURI.open_uri(URI(url))
-        OmgBibliographicItem.new **item(doc, acronym)
+        OmgBibliographicItem.new(**item(doc, acronym))
       rescue OpenURI::HTTPError, URI::InvalidURIError => e
         if e.is_a?(URI::InvalidURIError) || e.io.status[0] == "404"
           warn %{[relaton-omg] no document found for "#{ref}" reference.}
@@ -24,7 +24,7 @@ module RelatonOmg
 
       private
 
-      def item(doc, acronym)
+      def item(doc, acronym) # rubocop:disable Metrics/MethodLength
         {
           id: fetch_id(doc, acronym),
           fetched: Date.today.to_s,
@@ -37,7 +37,7 @@ module RelatonOmg
           link: fetch_link(doc),
           relation: fetch_relation(doc),
           keyword: fetch_keyword(doc),
-          license: fetch_license(doc)
+          license: fetch_license(doc),
         }
       end
 
@@ -56,7 +56,7 @@ module RelatonOmg
         if (ver = version(doc))
           id << ver
         end
-        [RelatonBib::DocumentIdentifier.new(id: id.join(" "), type: "OMG")]
+        [RelatonBib::DocumentIdentifier.new(id: id.join(" "), type: "OMG", primary: true)]
       end
 
       def fetch_abstract(doc)
@@ -95,13 +95,13 @@ module RelatonOmg
         links
       end
 
-      def fetch_relation(doc)
+      def fetch_relation(doc) # rubocop:disable Metrics/MethodLength
         current_version = version(doc)
         v = doc.xpath('//h2[.="History"]/following-sibling::section/div/table/tbody/tr')
         v.reduce([]) do |mem, row|
           ver = row.at("td").text
           unless ver == current_version
-            acronym = row.at('td[3]/a')[:href].split("/")[4]
+            acronym = row.at("td[3]/a")[:href].split("/")[4]
             fref = RelatonBib::FormattedRef.new content: "OMG #{acronym} #{ver}"
             bibitem = OmgBibliographicItem.new formattedref: fref
             mem << { type: "obsoletes", bibitem: bibitem }

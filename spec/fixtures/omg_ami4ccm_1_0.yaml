@@ -16,6 +16,7 @@ link:
 docid:
 - id: AMI4CCM 1.0
   type: OMG
+  primary: true
 date:
 - type: published
   value: 2013-03
@@ -35,7 +36,7 @@ abstract:
 docstatus:
   stage:
     value: formal
-fetched: '2021-04-21'
+fetched: '2022-02-08'
 keyword:
 - Corba Platform
 - Component Architecture
