@@ -2,16 +2,16 @@ require "nokogiri"
 
 module RelatonOmg
   module Scrapper
-    URL_PATTERN = "https://www.omg.org/spec/"
+    URL_PATTERN = "https://www.omg.org/spec/".freeze
 
     class << self
-      def scrape_page(ref)
+      def scrape_page(ref) # rubocop:disable Metrics/AbcSize, Metrics/MethodLength
         %r{OMG (?<acronym>[^\s]+)\s?(?<version>.*)} =~ ref
         return unless acronym
 
         url = URL_PATTERN + acronym
-        url += "/" + version if version
-        doc = Nokogiri::HTML OpenURI.open_uri(URI(url))
+        url += "/#{version}" if version
+        doc = Nokogiri::HTML OpenURI.open_uri(url, open_timeout: 10)
         OmgBibliographicItem.new(**item(doc, acronym))
       rescue OpenURI::HTTPError, URI::InvalidURIError => e
         if e.is_a?(URI::InvalidURIError) || e.io.status[0] == "404"
@@ -116,7 +116,7 @@ module RelatonOmg
 
       def fetch_license(doc)
         doc.xpath(
-          '//dt/span/a[contains(., "IPR Mode")]/../../following-sibling::dd/span'
+          '//dt/span/a[contains(., "IPR Mode")]/../../following-sibling::dd/span',
         ).map { |l| l.text.match(/[\w\s-]+/).to_s.strip }
       end
     end
