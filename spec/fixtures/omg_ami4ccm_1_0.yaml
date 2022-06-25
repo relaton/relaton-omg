@@ -21,9 +21,8 @@ date:
 - type: published
   value: 2013-03
 version:
-  revision_date: '2013-03-01'
-  draft:
-  - '1.0'
+- revision_date: '2013-03-01'
+  draft: '1.0'
 revdate: '2013-03-01'
 abstract:
 - content: This specification defines a mechanism to perform asynchronous method invocation

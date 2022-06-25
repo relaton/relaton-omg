@@ -65,7 +65,7 @@ module RelatonOmg
       end
 
       def fetch_version(doc)
-        RelatonBib::BibliographicItem::Version.new pub_date(doc), [version(doc)]
+        [RelatonBib::BibliographicItem::Version.new(pub_date(doc), version(doc))]
       end
 
       def version(doc)
