@@ -1,13 +1,13 @@
 ---
 id: AMI4CCM1.0
 title:
-- type: main
-  content: Asynchronous Method Invocation for CCM
+- content: Asynchronous Method Invocation for CCM
   language:
   - en
   script:
   - Latn
   format: text/plain
+  type: main
 link:
 - content: https://www.omg.org/spec/AMI4CCM/1.0/About-AMI4CCM/
   type: src
@@ -37,8 +37,8 @@ docstatus:
     value: formal
 fetched: '2022-02-08'
 keyword:
-- Corba Platform
-- Component Architecture
-- Domain
+- content: Corba Platform
+- content: Component Architecture
+- content: Domain
 license:
 - RF-Limited
