@@ -22,6 +22,15 @@ module RelatonOmg
       end
     end
 
+    #
+    # Fetches flavor shcema version from XML
+    #
+    # @return [String] flavor shcema version
+    #
+    def ext_schema
+      @ext_schema ||= schema_versions["relaton-model-omg"]
+    end
+
     # @param opts [Hash]
     # @option opts [Nokogiri::XML::Builder] :builder XML builder
     # @option opts [Boolean] :bibdata

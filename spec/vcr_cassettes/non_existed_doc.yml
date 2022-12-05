@@ -16,23 +16,37 @@ http_interactions:
   response:
     status:
       code: 404
-      message: ''
+      message: Not Found
     headers:
       Date:
-      - Sat, 20 Aug 2022 15:13:10 GMT
-      Server:
-      - Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/5.4.16 mod_perl/2.0.10 Perl/v5.16.3
-      Content-Disposition:
-      - inline;filename=f.txt
-      Vary:
-      - accept-encoding
+      - Thu, 01 Dec 2022 00:22:09 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
       - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache
+      Content-Disposition:
+      - inline;filename=f.txt
+      Vary:
+      - accept-encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server-Timing:
+      - cf-q-config;dur=4.9999998736894e-06
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=JiVu6nd64pbyTXsndM8qH%2Bs2Y2D3p4SslO2N2B2IGmmeyJCLLf1mlXIki1kiG64oVXnsTNHOg8x8LWlQZCpmJbLYQR%2BlBVf7mlxRGwfhLUjKknPhh%2Bb5VEkM3YqqCBFavjETVn0doqe0"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 7727aab75e6b5722-IAD
     body:
       encoding: ASCII-8BIT
-      string: '{"timestamp":"2022-08-20T15:13:10.014+00:00","status":404,"error":"Not
-        Found","message":"","path":"/spec/NOTEXIST/1.1"}'
-  recorded_at: Sat, 20 Aug 2022 15:13:10 GMT
+      string: '{"timestamp":"2022-12-01T00:22:09.906+00:00","status":404,"error":"Not
+        Found","path":"/spec/NOTEXIST/1.1"}'
+  recorded_at: Thu, 01 Dec 2022 00:22:09 GMT
 recorded_with: VCR 6.1.0

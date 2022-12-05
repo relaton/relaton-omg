@@ -8,7 +8,7 @@ image:https://codeclimate.com/github/relaton/relaton-omg/badges/gpa.svg["Code Cl
 image:https://img.shields.io/github/issues-pr-raw/relaton/relaton-omg.svg["Pull Requests", link="https://github.com/relaton/relaton-omg/pulls"]
 image:https://img.shields.io/github/commits-since/relaton/relaton-omg/latest.svg["Commits since latest",link="https://github.com/relaton/relaton-omg/releases"]
 
-RelatonOmg is a Ruby gem that search and fetch standards from https://www.omg.org[The Object Management Group (OMG)].
+RelatonOmg is a Ruby gem that searches and fetches standards from https://www.omg.org[The Object Management Group (OMG)].
 
 The standards scrape form https://www.omg.org/spec
 
@@ -47,7 +47,7 @@ item = RelatonOmg::OmgBibliography.get 'OMG AMI4CCM 1.0'
 => #<RelatonOmg::OmgBibliographicItem:0x007fda17eab2f0
 ...
 
-# Return nil if document doesn't exist.
+# Return nil if the document doesn't exist.
 RelatonOmg::OmgBibliography.get 'OMG 1111'
 [relaton-omg] no document found for "OMG 1111" reference.
 => nil
@@ -58,27 +58,14 @@ RelatonOmg::OmgBibliography.get 'OMG 1111'
 [source,ruby]
 ----
 item.to_xml
-=>"<bibitem id="AMI4CCM1.0">
-    <fetched>2020-02-17</fetched>
-    <title type="main" format="text/plain" language="en" script="Latn">Asynchronous Method Invocation for CCM</title>
-    <uri type="src">https://www.omg.org/spec/AMI4CCM/1.0/</uri>
-    <uri type="pdf">https://www.omg.org/spec/AMI4CCM/1.0/PDF</uri>
-    <docidentifier type="OMG">AMI4CCM 1.0</docidentifier>
-    <date type="published">
-        <on>2013-03</on>
-    </date>
-    <version>
-        <revision-date>2013-03-01</revision-date>
-        <draft>1.0</draft>
-    </version>
-    <abstract format="text/plain" language="en" script="Latn">This specification defines a mechanism to perform asynchronous method invocation for CCM (AMI4CCM).</abstract>
-    <status>
-        <stage>formal</stage>
-    </status>
-    <license>RF-Limited</license>
-    <keyword>Corba Platform</keyword>
-    <keyword>Component Architecture</keyword>
-  </bibitem>"
+=> "<bibitem id="AMI4CCM1.0" schema-version="v1.2.1">
+      <fetched>2022-12-05</fetched>
+      <title type="main" format="text/plain" language="en" script="Latn">Asynchronous Method Invocation for CCM</title>
+      <uri type="src">https://www.omg.org/spec/AMI4CCM/1.0/About-AMI4CCM</uri>
+      <uri type="pdf">https://www.omg.org/spec/AMI4CCM/1.0/PDF</uri>
+      <docidentifier type="OMG" primary="true">AMI4CCM 1.0</docidentifier>
+      ...
+    </bibitem>"
 ----
 
 === Typed links
@@ -105,7 +92,8 @@ item = RelatonOmg::OmgBibliographicItem.from_xml 'spec/fixtures/omg_ami4ccm_1_0.
 [source,ruby]
 ----
 hash = YAML.load_file 'spec/fixtures/omg_ami4ccm_1_0.yaml'
-=> {"id"=>"AMI4CCM1.0",
+=> {"schema-version"=>"v1.2.1",
+ "id"=>"AMI4CCM1.0",
 ...
 
 item = RelatonOmg::OmgBibliographicItem.from_hash hash

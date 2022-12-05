@@ -1,4 +1,5 @@
 ---
+schema-version: v1.2.1
 id: AMI4CCM1.0
 title:
 - content: Asynchronous Method Invocation for CCM
@@ -9,7 +10,7 @@ title:
   format: text/plain
   type: main
 link:
-- content: https://www.omg.org/spec/AMI4CCM/1.0/About-AMI4CCM/
+- content: https://www.omg.org/spec/AMI4CCM/1.0/About-AMI4CCM
   type: src
 - content: https://www.omg.org/spec/AMI4CCM/1.0/PDF
   type: pdf
@@ -35,10 +36,12 @@ abstract:
 docstatus:
   stage:
     value: formal
-fetched: '2022-02-08'
+fetched: '2022-11-30'
 keyword:
 - content: Corba Platform
 - content: Component Architecture
 - content: Domain
 license:
 - RF-Limited
+ext:
+  schema-version: v1.0.0
