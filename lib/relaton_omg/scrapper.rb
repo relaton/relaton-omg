@@ -14,12 +14,9 @@ module RelatonOmg
         doc = Nokogiri::HTML OpenURI.open_uri(url, open_timeout: 10)
         OmgBibliographicItem.new(**item(doc, acronym))
       rescue OpenURI::HTTPError, URI::InvalidURIError, Net::OpenTimeout => e
-        if e.is_a?(URI::InvalidURIError) || e.io.status[0] == "404"
-          warn %{[relaton-omg] no document found for "#{ref}" reference.}
-          return
-        end
+        return if e.is_a?(URI::InvalidURIError) || e.io.status[0] == "404"
 
-        raise RelatonBib::RequestError, "Unable acces #{url} (#{e.io.status.join(" ")}"
+        raise RelatonBib::RequestError, "Unable acces #{url} (#{e.io.status.join(' ')}"
       end
 
       private

@@ -1,6 +1,8 @@
 require "jing"
 
 RSpec.describe RelatonOmg do
+  before { RelatonOmg.instance_variable_set :@configuration, nil }
+
   it "has a version number" do
     expect(RelatonOmg::VERSION).not_to be nil
   end
@@ -48,7 +50,7 @@ RSpec.describe RelatonOmg do
       VCR.use_cassette "non_existed_doc" do
         expect do
           RelatonOmg::OmgBibliography.get "OMG NOTEXIST 1.1"
-        end.to output(/no document found/).to_stderr
+        end.to output(/\[relaton-omg\] \(OMG NOTEXIST 1\.1\) no document found/).to_stderr
       end
     end
 
