@@ -31,6 +31,20 @@ Or install it yourself as:
 
 == Usage
 
+=== Configuration
+
+Configuration is optional. The available option is `logger` which is a `Logger` instance. By default, the logger is `Logger.new($stderr)` with `Logger::WARN` level. To change the logger level, use `RelatonOmg.configure` block.
+
+[source,ruby]
+----
+require 'relaton_omg'
+=> true
+
+RelatonOmg.configure do |config|
+  config.logger.level = Logger::DEBUG
+end
+----
+
 === Search document
 
 Reference format is `OMG + {ACRONYM} + {VERSION}`
@@ -40,16 +54,13 @@ Reference format is `OMG + {ACRONYM} + {VERSION}`
 
 [source,ruby]
 ----
-require 'relaton_omg'
-=> true
-
 item = RelatonOmg::OmgBibliography.get 'OMG AMI4CCM 1.0'
 => #<RelatonOmg::OmgBibliographicItem:0x007fda17eab2f0
 ...
 
 # Return nil if the document doesn't exist.
 RelatonOmg::OmgBibliography.get 'OMG 1111'
-[relaton-omg] no document found for "OMG 1111" reference.
+[relaton-omg] no document found for `OMG 1111` reference.
 => nil
 ----
 
