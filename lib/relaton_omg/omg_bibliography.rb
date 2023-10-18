@@ -15,12 +15,12 @@ module RelatonOmg
       # @param opts [Hash] options
       # @return [RelatonOmg::OmgBibliographicItem]
       def get(code, _year = nil, _opts = {})
-        Util.warn "(#{code}) fetching from OMG website..."
+        Util.warn "(#{code}) Fetching from www.omg.org ..."
         result = search code
         if result
-          Util.warn "(#{code}) found `#{result.docidentifier.first.id}`"
+          Util.warn "(#{code}) Found: `#{result.docidentifier.first.id}`"
         else
-          Util.warn "(#{code}) no document found"
+          Util.warn "(#{code}) Not found."
         end
         result
       end

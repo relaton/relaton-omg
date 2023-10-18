@@ -55,12 +55,15 @@ Reference format is `OMG + {ACRONYM} + {VERSION}`
 [source,ruby]
 ----
 item = RelatonOmg::OmgBibliography.get 'OMG AMI4CCM 1.0'
-=> #<RelatonOmg::OmgBibliographicItem:0x007fda17eab2f0
+[relaton-omg] (OMG AMI4CCM 1.0) Fetching from www.omg.org ...
+[relaton-omg] (OMG AMI4CCM 1.0) Found: `AMI4CCM 1.0`
+=> #<RelatonOmg::OmgBibliographicItem:0x000000010435a520
 ...
 
 # Return nil if the document doesn't exist.
 RelatonOmg::OmgBibliography.get 'OMG 1111'
-[relaton-omg] no document found for `OMG 1111` reference.
+[relaton-omg] (OMG 1111) Fetching from www.omg.org ...
+[relaton-omg] (OMG 1111) Not found.
 => nil
 ----
 

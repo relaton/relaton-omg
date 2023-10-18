@@ -14,8 +14,8 @@ RSpec.describe RelatonOmg do
   end
 
   context "fetch OMG documents" do
-    it "get specific version" do
-      VCR.use_cassette "omg_ami4ccm_1_0" do
+    it "get specific version", vcr: "omg_ami4ccm_1_0" do
+      expect do
         item = RelatonOmg::OmgBibliography.get "OMG AMI4CCM 1.0"
         expect(item).to be_instance_of RelatonOmg::OmgBibliographicItem
         file = "spec/fixtures/omg_ami4ccm_1_0.xml"
@@ -27,7 +27,10 @@ RSpec.describe RelatonOmg do
         schema = Jing.new "grammars/relaton-omg-compile.rng"
         errors = schema.validate file
         expect(errors).to eq []
-      end
+      end.to output(
+        include("[relaton-omg] (OMG AMI4CCM 1.0) Fetching from www.omg.org ...",
+                "[relaton-omg] (OMG AMI4CCM 1.0) Found: `AMI4CCM 1.0`"),
+      ).to_stderr
     end
 
     it "get last version" do
@@ -50,7 +53,7 @@ RSpec.describe RelatonOmg do
       VCR.use_cassette "non_existed_doc" do
         expect do
           RelatonOmg::OmgBibliography.get "OMG NOTEXIST 1.1"
-        end.to output(/\[relaton-omg\] \(OMG NOTEXIST 1\.1\) no document found/).to_stderr
+        end.to output(/\[relaton-omg\] \(OMG NOTEXIST 1\.1\) Not found\./).to_stderr
       end
     end
 
