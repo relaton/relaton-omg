@@ -1,6 +1,6 @@
 module RelatonOmg
-  class HashConverter < RelatonBib::HashConverter
-    class << self
-    end
+  module HashConverter
+    include RelatonBib::HashConverter
+    extend self
   end
 end

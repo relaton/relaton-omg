@@ -19,7 +19,7 @@ http_interactions:
       message: Not Found
     headers:
       Date:
-      - Wed, 18 Oct 2023 16:46:23 GMT
+      - Thu, 23 Nov 2023 17:54:21 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -35,16 +35,16 @@ http_interactions:
       Cf-Cache-Status:
       - DYNAMIC
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=N9TXSCdHzeSLGeo1PnEcVhH0XQ7ucl2FiU9SkEcjuRTSsctxJOpOLPa1kDCKw7SdkF9wkO4kDKqguBCf3qP8bnsUoJguyHp1FR3yz7tyQD4tOY7uMTqGJqW6WwF1VtmFGDqwgrkr5arR"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=J2U8YV4CNwO9XnQQwwzUb20EMpnk86kjrh3thQMEnNSDeK3WArCCz81DWW%2Bzp8eO4SG60pdtF8INy9AJTRKtNFjJFNJ4QYDVKLAj9Gosd%2BQcMfx20E3uaQXLJrIJVrhGoY1sM2IFh9fN"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 818241d6fbe653fe-ATL
+      - 82ab46e548c8454e-ATL
     body:
       encoding: ASCII-8BIT
-      string: '{"timestamp":"2023-10-18T16:46:23.947+00:00","status":404,"error":"Not
+      string: '{"timestamp":"2023-11-23T17:54:21.738+00:00","status":404,"error":"Not
         Found","path":"/spec/NOTEXIST/1.1"}'
-  recorded_at: Wed, 18 Oct 2023 16:46:23 GMT
+  recorded_at: Thu, 23 Nov 2023 17:54:21 GMT
 recorded_with: VCR 6.2.0

@@ -16,7 +16,7 @@ module RelatonOmg
       rescue OpenURI::HTTPError, URI::InvalidURIError, Net::OpenTimeout => e
         return if e.is_a?(URI::InvalidURIError) || e.io.status[0] == "404"
 
-        raise RelatonBib::RequestError, "Unable acces #{url} (#{e.io.status.join(' ')}"
+        raise RelatonBib::RequestError, "Unable acces #{url} (#{e.io.status.join(' ')})"
       end
 
       private
