@@ -1,5 +1,5 @@
 ---
-schema-version: v1.2.5
+schema-version: v1.2.8
 id: AMI4CCM1.0
 title:
 - content: Asynchronous Method Invocation for CCM
