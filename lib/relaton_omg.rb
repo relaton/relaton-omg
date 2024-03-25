@@ -1,7 +1,6 @@
 require "nokogiri"
 require "relaton_bib"
 require "relaton_omg/version"
-require "relaton_omg/config"
 require "relaton_omg/util"
 require "relaton_omg/scrapper"
 require "relaton_omg/omg_bibliography"
