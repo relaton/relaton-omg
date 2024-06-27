@@ -16,10 +16,10 @@ http_interactions:
   response:
     status:
       code: 404
-      message: Not Found
+      message: ''
     headers:
       Date:
-      - Wed, 03 Jan 2024 05:04:21 GMT
+      - Wed, 26 Jun 2024 21:28:32 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -35,16 +35,16 @@ http_interactions:
       Cf-Cache-Status:
       - DYNAMIC
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2F5PUumuQ2hcgTZ5c7ogk%2BYvWbwJVxYD7EW%2F9Gz%2BjYCwsXByd%2BuAOonOk69UrnD2gmOvl8NjwcFe%2FHBgrwsvLK8u%2FZTlcU4mWxTw5CTAdi1lG5yDOjFxRyCrZNaTo7CF%2FyKLpb%2BBDVn8y"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=g8Gqm%2BdhibJjRquHvNs24X3piUhLpS%2Bghj7rDwDYBODdoHKc8CMXy8dB02eYK55iH2fTwJhvJ%2BmRR%2BgVy8l3S%2BV7rOw7aNXjUEDSfuCLl%2BrFkacHXeAZ%2B%2F5JQTrnex4zoqS9E%2BV3ywLv"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 83f8b3537bb10719-ATL
+      - 89a049a358ef7b91-ATL
     body:
       encoding: ASCII-8BIT
-      string: '{"timestamp":"2024-01-03T05:04:21.101+00:00","status":404,"error":"Not
+      string: '{"timestamp":"2024-06-26T21:28:32.564+00:00","status":404,"error":"Not
         Found","path":"/spec/NOTEXIST/1.1"}'
-  recorded_at: Wed, 03 Jan 2024 05:04:21 GMT
+  recorded_at: Wed, 26 Jun 2024 21:28:32 GMT
 recorded_with: VCR 6.2.0

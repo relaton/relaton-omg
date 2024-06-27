@@ -7,7 +7,7 @@ module RelatonOmg
       # @param code [String] the OMG standard reference
       # @return [RelatonOmg::OmgBibliographicItem]
       def search(text)
-        Scrapper.scrape_page text
+        Scraper.scrape_page text
       end
 
       # @param code [String] the OMG standard reference

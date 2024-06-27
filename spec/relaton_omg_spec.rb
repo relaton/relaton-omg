@@ -49,6 +49,15 @@ RSpec.describe RelatonOmg do
       end
     end
 
+    it "get specification", vcr: "omg_uml_2.1.1_superstructure" do
+      item = RelatonOmg::OmgBibliography.get "OMG UML 2.1.1 Superstructure"
+      expect(item).to be_instance_of RelatonOmg::OmgBibliographicItem
+      expect(item.docidentifier.first.id).to eq "UML 2.1.1 Superstructure"
+      expect(item.title.first.title.content).to eq "Unified Modeling Language: Superstructure"
+      expect(item.date.first.type).to eq "published"
+      expect(item.date.first.on).to eq "2007-07-01"
+    end
+
     it "deals with non-existent document" do
       VCR.use_cassette "non_existed_doc" do
         expect do
