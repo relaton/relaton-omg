@@ -1,9 +1,6 @@
 module RelatonOmg
   module Util
     extend RelatonBib::Util
-
-    def self.logger
-      RelatonOmg.configuration.logger
-    end
+    PROGNAME = "relaton-omg".freeze
   end
 end

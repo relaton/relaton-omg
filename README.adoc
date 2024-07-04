@@ -31,20 +31,6 @@ Or install it yourself as:
 
 == Usage
 
-=== Configuration
-
-Configuration is optional. The available option is `logger` which is a `Logger` instance. By default, the logger is `Logger.new($stderr)` with `Logger::WARN` level. To change the logger level, use `RelatonOmg.configure` block.
-
-[source,ruby]
-----
-require 'relaton_omg'
-=> true
-
-RelatonOmg.configure do |config|
-  config.logger.level = Logger::DEBUG
-end
-----
-
 === Search document
 
 Reference format is `OMG + {ACRONYM} + {VERSION}`
@@ -54,6 +40,9 @@ Reference format is `OMG + {ACRONYM} + {VERSION}`
 
 [source,ruby]
 ----
+require 'relaton_omg'
+=> true
+
 item = RelatonOmg::OmgBibliography.get 'OMG AMI4CCM 1.0'
 [relaton-omg] (OMG AMI4CCM 1.0) Fetching from www.omg.org ...
 [relaton-omg] (OMG AMI4CCM 1.0) Found: `AMI4CCM 1.0`
@@ -72,7 +61,7 @@ RelatonOmg::OmgBibliography.get 'OMG 1111'
 [source,ruby]
 ----
 item.to_xml
-=> "<bibitem id="AMI4CCM1.0" schema-version="v1.2.8">
+=> "<bibitem id="AMI4CCM1.0" schema-version="v1.2.9">
       <fetched>2022-12-05</fetched>
       <title type="main" format="text/plain" language="en" script="Latn">Asynchronous Method Invocation for CCM</title>
       <uri type="src">https://www.omg.org/spec/AMI4CCM/1.0/About-AMI4CCM</uri>
@@ -106,7 +95,7 @@ item = RelatonOmg::OmgBibliographicItem.from_xml 'spec/fixtures/omg_ami4ccm_1_0.
 [source,ruby]
 ----
 hash = YAML.load_file 'spec/fixtures/omg_ami4ccm_1_0.yaml'
-=> {"schema-version"=>"v1.2.8",
+=> {"schema-version"=>"v1.2.9",
  "id"=>"AMI4CCM1.0",
 ...
 
@@ -122,6 +111,10 @@ item = RelatonOmg::OmgBibliographicItem.from_yaml 'spec/fixtures/omg_ami4ccm_1_0
 => #<RelatonOmg::OmgBibliographicItem:0x007f85a00f45d8
 ...
 ----
+
+=== Logging
+
+RelatonOmg uses the relaton-logger gem for logging. By default, it logs to STDOUT. To change the log levels and add other loggers, read the https://github.com/relaton/relaton-logger#usage[relaton-logger] documentation.
 
 == Contributing
 
