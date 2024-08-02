@@ -27,7 +27,7 @@ RSpec.describe RelatonOmg do
         expect(errors).to eq []
       end.to output(
         include("[relaton-omg] INFO: (OMG AMI4CCM 1.0) Fetching from www.omg.org ...",
-                "[relaton-omg] INFO: (OMG AMI4CCM 1.0) Found: `AMI4CCM 1.0`"),
+                "[relaton-omg] INFO: (OMG AMI4CCM 1.0) Found: `OMG AMI4CCM 1.0`"),
       ).to_stderr_from_any_process
     end
 
@@ -50,7 +50,7 @@ RSpec.describe RelatonOmg do
     it "get specification", vcr: "omg_uml_2.1.1_superstructure" do
       item = RelatonOmg::OmgBibliography.get "OMG UML 2.1.1 Superstructure"
       expect(item).to be_instance_of RelatonOmg::OmgBibliographicItem
-      expect(item.docidentifier.first.id).to eq "UML 2.1.1 Superstructure"
+      expect(item.docidentifier.first.id).to eq "OMG UML 2.1.1 Superstructure"
       expect(item.title.first.title.content).to eq "Unified Modeling Language: Superstructure"
       expect(item.date.first.type).to eq "published"
       expect(item.date.first.on).to eq "2007-07-01"

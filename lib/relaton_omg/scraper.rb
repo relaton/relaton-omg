@@ -60,7 +60,7 @@ module RelatonOmg
     end
 
     def fetch_docid
-      id = [@acronym]
+      id = ["OMG", @acronym]
       id << doc_version if doc_version
       id << @spec if @spec
       [RelatonBib::DocumentIdentifier.new(id: id.join(" "), type: "OMG", primary: true)]

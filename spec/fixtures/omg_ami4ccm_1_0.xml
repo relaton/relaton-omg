@@ -3,7 +3,7 @@
   <title type="main" format="text/plain" language="en" script="Latn">Asynchronous Method Invocation for CCM</title>
   <uri type="src">https://www.omg.org/spec/AMI4CCM/1.0/About-AMI4CCM</uri>
   <uri type="pdf">https://www.omg.org/spec/AMI4CCM/1.0/PDF</uri>
-  <docidentifier type="OMG" primary="true">AMI4CCM 1.0</docidentifier>
+  <docidentifier type="OMG" primary="true">OMG AMI4CCM 1.0</docidentifier>
   <date type="published">
     <on>2013-03</on>
   </date>

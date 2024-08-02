@@ -15,7 +15,7 @@ link:
 - content: https://www.omg.org/spec/AMI4CCM/1.0/PDF
   type: pdf
 docid:
-- id: AMI4CCM 1.0
+- id: OMG AMI4CCM 1.0
   type: OMG
   primary: true
 date:
