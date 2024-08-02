@@ -18,6 +18,7 @@
   <relation type="obsoletes">
     <bibitem>
       <formattedref format="text/plain">OMG AMI4CCM 1.0</formattedref>
+      <docidentifier type="OMG">OMG AMI4CCM 1.0</docidentifier>
     </bibitem>
   </relation>
   <license>RF-Limited</license>

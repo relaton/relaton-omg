@@ -115,8 +115,10 @@ module RelatonOmg
         ver = row.at("td").text
         unless ver == doc_version
           acronym = row.at("td[3]/a")[:href].split("/")[4]
-          fref = RelatonBib::FormattedRef.new content: "OMG #{acronym} #{ver}"
-          bibitem = OmgBibliographicItem.new formattedref: fref
+          id = ["OMG", acronym, ver].join(" ")
+          fref = RelatonBib::FormattedRef.new content: id
+          docid = RelatonBib::DocumentIdentifier.new id: id, type: "OMG"
+          bibitem = OmgBibliographicItem.new formattedref: fref, docid: [docid]
           mem << { type: "obsoletes", bibitem: bibitem }
         end
         mem
