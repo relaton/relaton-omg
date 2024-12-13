@@ -19,7 +19,7 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Thu, 01 Aug 2024 23:45:57 GMT
+      - Wed, 11 Dec 2024 03:22:00 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -33,18 +33,22 @@ http_interactions:
       Vary:
       - accept-encoding
       Cf-Cache-Status:
-      - DYNAMIC
+      - MISS
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=3%2FsedtKBlg%2B0wKNM8niVVLARYUDQrboLr7iFGuLstISOHdj%2FT3cVDq77e%2B3vAHTRYbgNsrbXlnODzMZ2R7aD9uDFPzitHNWoHdbJO%2BdFVWMJGiF1GJ95pe0nNVytFyLupqkqhGhmrtj5"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=j2Gk8M9%2FnLlsNBjZx%2B%2FZEvoap7IhSpDLbyPgt1%2BTI3JEef1IqfNGSBv1rIDuped7yHLZ6uLfR4eP0ArOEUZF91hXa1u%2B7%2F4JcgWIfCAGdhR%2BK%2Fq9sggl7ZN62sOX49qsnLvfi3I7P6Df"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 8ac9b46db82e07d2-ATL
+      - 8f0259072bf0bfd1-ATL
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      Server-Timing:
+      - cfL4;desc="?proto=TCP&rtt=11322&min_rtt=10177&rtt_var=4634&sent=5&recv=6&lost=0&retrans=0&sent_bytes=2782&recv_bytes=756&delivery_rate=397366&cwnd=252&unsent_bytes=0&cid=df0e9d3af7b82b49&ts=114&x=0"
     body:
       encoding: ASCII-8BIT
-      string: '{"timestamp":"2024-08-01T23:45:57.473+00:00","status":404,"error":"Not
+      string: '{"timestamp":"2024-12-11T03:22:00.265+00:00","status":404,"error":"Not
         Found","path":"/spec/NOTEXIST/1.1"}'
-  recorded_at: Thu, 01 Aug 2024 23:45:57 GMT
-recorded_with: VCR 6.2.0
+  recorded_at: Wed, 11 Dec 2024 03:22:00 GMT
+recorded_with: VCR 6.3.1
