@@ -1,14 +1,14 @@
-require_relative "lib/relaton_omg/version"
+require_relative "lib/relaton/omg/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "relaton-omg"
-  spec.version       = RelatonOmg::VERSION
+  spec.version       = Relaton::Omg::VERSION
   spec.authors       = ["Ribose Inc."]
   spec.email         = ["open.source@ribose.com"]
 
-  spec.summary       = "RelatonOmg: retrieve OMG Standards for bibliographic "\
+  spec.summary       = "Relaton::Omg: retrieve OMG Standards for bibliographic "\
                        "using the IsoBibliographicItem model"
-  spec.description   = "RelatonOmg: retrieve OMG Standards for bibliographic "\
+  spec.description   = "Relaton::Omg: retrieve OMG Standards for bibliographic "\
                        "using the IsoBibliographicItem model"
   spec.homepage      = "https://github.com/relaton/relaton-ogn"
   spec.license       = "BSD-2-Clause"
@@ -27,5 +27,5 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "base64"
-  spec.add_dependency "relaton-bib", "~> 1.20.0"
+  spec.add_dependency "relaton-bib", "~> 2.0.0-alpha.1"
 end

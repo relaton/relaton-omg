@@ -1,0 +1,47 @@
+---
+schema_version: v1.2.9
+id: AMI4CCM10
+title:
+- content: Asynchronous Method Invocation for CCM
+  language: en
+  script: Latn
+  format: text/plain
+  type: main
+source:
+- content: https://www.omg.org/spec/AMI4CCM/1.0/About-AMI4CCM
+  type: src
+- content: https://www.omg.org/spec/AMI4CCM/1.0/PDF
+  type: pdf
+docidentifier:
+- content: OMG AMI4CCM 1.0
+  type: OMG
+  primary: true
+date:
+- type: published
+  at: 2013-03
+version:
+- revision_date: '2013-03-01'
+  draft: '1.0'
+abstract:
+- content: This specification defines a mechanism to perform asynchronous method invocation
+    for CCM (AMI4CCM).
+  language: en
+  script: Latn
+status:
+  stage:
+    content: formal
+fetched: '2022-11-30'
+keyword:
+- taxon:
+  - content: Corba Platform
+- taxon:
+  - content: Component Architecture
+- taxon:
+  - content: Domain
+license:
+- RF-Limited
+ext:
+  schema_version: v1.0.1
+  doctype:
+    content: techical specification
+  flavor: omg

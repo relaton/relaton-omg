@@ -1,0 +1,28 @@
+<bibitem id="AMI4CCM10" schema-version="v1.2.9">
+  <fetched>2022-11-30</fetched>
+  <title language="en" script="Latn" type="main" format="text/plain">Asynchronous Method Invocation for CCM</title>
+  <uri type="src">https://www.omg.org/spec/AMI4CCM/1.0/About-AMI4CCM</uri>
+  <uri type="pdf">https://www.omg.org/spec/AMI4CCM/1.0/PDF</uri>
+  <docidentifier type="OMG" primary="true">OMG AMI4CCM 1.0</docidentifier>
+  <date type="published">
+    <on>2013-03</on>
+  </date>
+  <version>
+    <revision-date>2013-03-01</revision-date>
+    <draft>1.0</draft>
+  </version>
+  <abstract language="en" script="Latn">This specification defines a mechanism to perform asynchronous method invocation for CCM (AMI4CCM).</abstract>
+  <status>
+    <stage>formal</stage>
+  </status>
+  <license>RF-Limited</license>
+  <keyword>
+    <taxon>Corba Platform</taxon>
+  </keyword>
+  <keyword>
+    <taxon>Component Architecture</taxon>
+  </keyword>
+  <keyword>
+    <taxon>Domain</taxon>
+  </keyword>
+</bibitem>
