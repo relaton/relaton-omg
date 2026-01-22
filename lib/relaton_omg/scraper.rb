@@ -1,4 +1,4 @@
-require "nokogiri"
+require "mechanize"
 
 module RelatonOmg
   class Scraper
@@ -24,11 +24,15 @@ module RelatonOmg
     def get_doc
       @url = "#{URL_PATTERN}#{@acronym}/"
       @url += @version.gsub(' ', '/') if @version
-      @doc = Nokogiri::HTML OpenURI.open_uri(@url, open_timeout: 10)
-    rescue OpenURI::HTTPError, URI::InvalidURIError, Net::OpenTimeout => e
-      return if e.is_a?(URI::InvalidURIError) || e.io.status[0] == "404"
+      agent = Mechanize.new
+      agent.open_timeout = 10
+      @doc = agent.get(@url)
+    rescue Mechanize::ResponseCodeError => e
+      return if e.response_code == "404"
 
-      raise RelatonBib::RequestError, "Unable acces #{@url} (#{e.io.status.join(' ')})"
+      raise RelatonBib::RequestError, "Unable acces #{@url} (#{e.response_code})"
+    rescue Net::OpenTimeout
+      raise RelatonBib::RequestError, "Unable acces #{@url} (timeout)"
     end
 
     def item

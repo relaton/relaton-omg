@@ -27,5 +27,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "base64"
+  spec.add_dependency "mechanize", "~> 2.8"
   spec.add_dependency "relaton-bib", "~> 1.20.0"
 end

@@ -65,9 +65,11 @@ RSpec.describe RelatonOmg do
     end
 
     it "deals with unavailable service" do
-      io = double("io")
-      expect(io).to receive(:status).and_return(["503", "Service Unavailable"]).at_least(:once)
-      expect(OpenURI).to receive(:open_uri).and_raise OpenURI::HTTPError.new("Service Unavailable", io)
+      agent = double("agent")
+      expect(Mechanize).to receive(:new).and_return(agent)
+      expect(agent).to receive(:open_timeout=).with(10)
+      page = double("page", code: "503")
+      expect(agent).to receive(:get).and_raise Mechanize::ResponseCodeError.new(page)
       expect do
         RelatonOmg::OmgBibliography.get "OMG AMI4CCM"
       end.to raise_error RelatonBib::RequestError

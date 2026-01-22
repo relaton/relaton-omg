@@ -8,47 +8,55 @@ http_interactions:
       string: ''
     headers:
       Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      - gzip,deflate,identity
       Accept:
       - "*/*"
       User-Agent:
-      - Ruby
+      - Mechanize/2.14.0 Ruby/3.4.7p58 (http://github.com/sparklemotion/mechanize/)
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.omg.org
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - '300'
   response:
     status:
       code: 404
-      message: ''
+      message: Not Found
     headers:
       Date:
-      - Sun, 02 Mar 2025 03:48:53 GMT
+      - Thu, 22 Jan 2026 19:56:45 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
       - chunked
       Connection:
       - keep-alive
-      Cache-Control:
-      - no-cache
-      Content-Disposition:
-      - inline;filename=f.txt
-      Vary:
-      - accept-encoding
-      Cf-Cache-Status:
-      - MISS
-      Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=yN%2B8mA5Q%2BaZDDLFbFaqJoT7tvaWrCiKpEuH62QCmAZxt%2FAWbu91oK9mB8DJ8ZKIk6ZVaoHw6Eb3RQbF6zdyBSEPVBcRuHmVnU2E2oSiRi9U5m0QEgWghX2eJNlJtvmIaZbDZy2McOaNN"}],"group":"cf-nel","max_age":604800}'
-      Nel:
-      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
+      Cache-Control:
+      - no-cache
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Content-Disposition:
+      - inline;filename=f.txt
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=KpQjjsUOHnk7P%2FLTVZtT1dXDV0WcNjFHWBol6e9aMq%2BxesKnRPxctyFXvqHt0sgje8KtmqeJ9O9s8lN1q9mOI3vmcBiMiMOBAz1jmU3avon4F5Dv"}]}'
+      Cf-Cache-Status:
+      - MISS
+      Vary:
+      - accept-encoding
+      Content-Encoding:
+      - gzip
       Cf-Ray:
-      - 919debc78e996744-ATL
+      - 9c219dcdc91971f5-ATL
       Alt-Svc:
       - h3=":443"; ma=86400
-      Server-Timing:
-      - cfL4;desc="?proto=TCP&rtt=9218&min_rtt=8951&rtt_var=3006&sent=5&recv=7&lost=0&retrans=0&sent_bytes=2780&recv_bytes=756&delivery_rate=387541&cwnd=252&unsent_bytes=0&cid=8517a30a6e8af600&ts=182&x=0"
     body:
       encoding: ASCII-8BIT
-      string: '{"timestamp":"2025-03-02T03:48:53.166+00:00","status":404,"error":"Not
-        Found","path":"/spec/NOTEXIST/1.1"}'
-  recorded_at: Sun, 02 Mar 2025 03:48:52 GMT
-recorded_with: VCR 6.3.1
+      string: !binary |-
+        H4sIAAAAAAAA/w3LsQqDMBCA4Vcpt1bN3REFb2+hix2aoatoQAdNSM5JfHez/nz/CbpuPuu4RRBg5K5Gqpkd9dJ2YtuGuH8iCiJUUJweGcSircCnFFKZhqCPdzj2uYA46lKSydFPZvi61//zc4YagusGT2gXw2oAAAA=
+  recorded_at: Thu, 22 Jan 2026 19:56:45 GMT
+recorded_with: VCR 6.4.0
