@@ -21,7 +21,7 @@ module Relaton
         doc = scraper.get_doc
         return if doc.nil? || scraper.fetch_link.empty?
 
-        Bib::ItemData.new(**scraper.item)
+        Omg::ItemData.new(**scraper.item)
       end
 
       def get_doc

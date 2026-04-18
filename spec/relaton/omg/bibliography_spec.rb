@@ -18,7 +18,7 @@ RSpec.describe Relaton::Omg::Bibliography do
   it "fetches specific version", vcr: "omg_ami4ccm_1_0" do
     expect do
       item = described_class.get "OMG AMI4CCM 1.0"
-      expect(item).to be_instance_of Relaton::Bib::ItemData
+      expect(item).to be_instance_of Relaton::Omg::ItemData
       file = "spec/fixtures/omg_ami4ccm_1_0.xml"
       xml = item.to_xml
       File.write file, xml, encoding: "utf-8" unless File.exist? file
@@ -37,7 +37,7 @@ RSpec.describe Relaton::Omg::Bibliography do
   it "fetches last version" do
     VCR.use_cassette "omg_ami4ccm_last" do
       item = described_class.get "OMG AMI4CCM"
-      expect(item).to be_instance_of Relaton::Bib::ItemData
+      expect(item).to be_instance_of Relaton::Omg::ItemData
       file = "spec/fixtures/omg_ami4ccm_last.xml"
       xml = item.to_xml
       File.write file, xml, encoding: "utf-8" unless File.exist? file
@@ -52,7 +52,7 @@ RSpec.describe Relaton::Omg::Bibliography do
 
   it "fetches specification", vcr: "omg_uml_2.1.1_superstructure" do
     item = described_class.get "OMG UML 2.1.1 Superstructure"
-    expect(item).to be_instance_of Relaton::Bib::ItemData
+    expect(item).to be_instance_of Relaton::Omg::ItemData
     expect(item.docidentifier.first.content).to eq "OMG UML 2.1.1 Superstructure"
     expect(item.title.first.content).to eq "Unified Modeling Language: Superstructure"
     expect(item.date.first.type).to eq "published"

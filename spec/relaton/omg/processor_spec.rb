@@ -12,21 +12,21 @@ describe Relaton::Omg::Processor do
 
   it "gets a document", vcr: "omg_ami4ccm_1_0" do
     result = processor.get("OMG AMI4CCM 1.0", nil, {})
-    expect(result).to be_instance_of Relaton::Bib::ItemData
+    expect(result).to be_instance_of Relaton::Omg::ItemData
     expect(result.docidentifier.first.content).to eq "OMG AMI4CCM 1.0"
   end
 
   it "creates from XML" do
     xml = File.read "spec/fixtures/omg_ami4ccm_1_0.xml", encoding: "UTF-8"
     item = processor.from_xml(xml)
-    expect(item).to be_instance_of Relaton::Bib::ItemData
+    expect(item).to be_instance_of Relaton::Omg::ItemData
     expect(item.docidentifier.first.content).to eq "OMG AMI4CCM 1.0"
   end
 
   it "creates from YAML" do
     yaml = File.read "spec/fixtures/omg_ami4ccm_1_0.yaml", encoding: "UTF-8"
     item = processor.from_yaml(yaml)
-    expect(item).to be_instance_of Relaton::Bib::ItemData
+    expect(item).to be_instance_of Relaton::Omg::ItemData
     expect(item.docidentifier.first.content).to eq "OMG AMI4CCM 1.0"
   end
 

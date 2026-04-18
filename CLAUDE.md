@@ -24,7 +24,8 @@ All source lives under `lib/relaton/omg/`. The main entry point is `lib/relaton/
 
 The gem extends `relaton-bib` (~> 2.0.0-alpha.1), the core Relaton bibliographic data library:
 
-- `Relaton::Omg::Item` < `Bib::Item` — base item class, uses `Bib::ItemData` model
+- `Relaton::Omg::Item` < `Bib::Item` — base item class, uses `Omg::ItemData` model (subclass of `Bib::ItemData`)
+- `Relaton::Omg::Ext` < `Bib::Ext` — overrides `get_schema_version` to return the OMG model version
 - `Relaton::Omg::Bibitem` < `Item` — includes `Bib::BibitemShared`, for `<bibitem>` XML
 - `Relaton::Omg::Bibdata` < `Item` — includes `Bib::BibdataShared`, for `<bibdata>` XML
 - `Relaton::Omg::Processor` < `Core::Processor` — relaton-core integration, delegates to `Bibliography`, `Bibitem`, `Item`
