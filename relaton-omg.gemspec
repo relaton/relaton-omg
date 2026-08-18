@@ -10,12 +10,12 @@ Gem::Specification.new do |spec|
                        "using the IsoBibliographicItem model"
   spec.description   = "Relaton::Omg: retrieve OMG Standards for bibliographic "\
                        "using the IsoBibliographicItem model"
-  spec.homepage      = "https://github.com/relaton/relaton-ogn"
+  spec.homepage      = "https://github.com/relaton/relaton-omg"
   spec.license       = "BSD-2-Clause"
   spec.required_ruby_version = Gem::Requirement.new(">= 3.2.0")
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/relaton/relaton-ogn"
+  spec.metadata["source_code_uri"] = "https://github.com/relaton/relaton-omg"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
